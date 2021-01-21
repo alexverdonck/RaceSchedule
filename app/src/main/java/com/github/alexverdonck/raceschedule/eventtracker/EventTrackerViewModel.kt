@@ -39,5 +39,16 @@ class EventTrackerViewModel(application: Application) : AndroidViewModel(applica
         }
     }
 
+    // navigation stuff
+    private val _navigateToEventDetail = MutableLiveData<Event>()
+    val navigateToEventDetail
+        get() = _navigateToEventDetail
 
+    fun onEventClicked(event: Event) {
+        _navigateToEventDetail.value = event
+    }
+
+    fun onEventDetailNavigated() {
+        _navigateToEventDetail.value = null
+    }
 }

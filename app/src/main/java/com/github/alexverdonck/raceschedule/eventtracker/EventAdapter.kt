@@ -8,12 +8,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.github.alexverdonck.raceschedule.data.Event
 import com.github.alexverdonck.raceschedule.databinding.ListItemEventBinding
 
-class EventAdapter : ListAdapter<Event, EventAdapter.ViewHolder>(EventDiffCallback()) {
+class EventAdapter(val clickListener: EventListener) : ListAdapter<Event, EventAdapter.ViewHolder>(EventDiffCallback()) {
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = getItem(position)
 
-        holder.bind(item)
+        holder.bind(item, clickListener)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -22,8 +22,9 @@ class EventAdapter : ListAdapter<Event, EventAdapter.ViewHolder>(EventDiffCallba
 
     class ViewHolder private constructor(val binding: ListItemEventBinding)
         : RecyclerView.ViewHolder(binding.root) {
-            fun bind(item: Event) {
+            fun bind(item: Event, clickListener: EventListener) {
                 binding.event = item
+                binding.clickListener = clickListener
                 binding.executePendingBindings()
             }
 
@@ -36,6 +37,10 @@ class EventAdapter : ListAdapter<Event, EventAdapter.ViewHolder>(EventDiffCallba
             }
         }
     }
+}
+
+class EventListener(val clickListener: (event: Event) -> Unit) {
+    fun onClick(event: Event) = clickListener(event)
 }
 
 // list doesn't change so this might not be needed? look into

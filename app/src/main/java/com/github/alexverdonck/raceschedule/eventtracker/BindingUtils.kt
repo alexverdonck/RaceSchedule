@@ -13,7 +13,14 @@ fun TextView.setEventName(item: Event?) {
     }
 }
 
-@BindingAdapter("eventTime")
+@BindingAdapter("eventLocation")
+fun TextView.setEventLocation(item: Event?) {
+    item?.let {
+        text = item.location
+    }
+}
+
+@BindingAdapter("eventRaceTime")
 fun TextView.setEventTime(item: Event?) {
     item?.let {
         text = item.sessions["Race"].toString()// need to format this for time/countdown/live/localtime stuff

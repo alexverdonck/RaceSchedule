@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.github.alexverdonck.raceschedule.R
 import com.github.alexverdonck.raceschedule.databinding.FragmentEventTrackerBinding
 
@@ -27,9 +28,18 @@ class EventTrackerFragment : Fragment() {
 
         binding.lifecycleOwner = this
 
-        val adapter = EventAdapter() // to be made
+        val adapter = EventAdapter(EventListener { event ->
+            eventTrackerViewModel.onEventClicked(event)
+        })
 
         binding.eventList.adapter = adapter
+
+        eventTrackerViewModel.navigateToEventDetail.observe(viewLifecycleOwner, Observer {event ->
+            event?.let {
+                this.findNavController().navigate(EventTrackerFragmentDirections.actionEventTrackerFragmentToEventDetailFragment(event))
+                eventTrackerViewModel.onEventDetailNavigated()
+            }
+        })
 
         eventTrackerViewModel.events.observe(viewLifecycleOwner, Observer {
             it?.let {

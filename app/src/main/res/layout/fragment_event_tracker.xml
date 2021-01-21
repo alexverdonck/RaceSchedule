@@ -6,8 +6,7 @@
     <data>
         <variable
             name="eventTrackerViewModel"
-            type="com.github.alexverdonck.raceschedule.eventtracker.EventTrackerViewModel"
-            />
+            type="com.github.alexverdonck.raceschedule.eventtracker.EventTrackerViewModel"/>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

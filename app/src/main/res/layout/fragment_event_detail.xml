@@ -4,23 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
         <variable
-            name="event"
-            type="com.github.alexverdonck.raceschedule.data.Event" />
-        <variable
-            name="clickListener"
-            type="com.github.alexverdonck.raceschedule.eventtracker.EventListener" />
+            name="eventDetailViewModel"
+            type="com.github.alexverdonck.raceschedule.eventdetail.EventDetailViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:onClick="@{() ->clickListener.onClick(event)}">
+        android:layout_height="match_parent"
+        tools:context=".eventdetail.EventDetailFragment">
+
 
         <TextView
-            android:id="@+id/race_name"
+            android:id="@+id/event_location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="14dp"
@@ -28,19 +24,29 @@
             android:text="TextView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="TEST"
-            app:eventName="@{event}"/>
+            app:eventLocation="@{eventDetailViewModel.event}"/>
 
         <TextView
-            android:id="@+id/race_time"
+            android:id="@+id/event_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="14dp"
             android:layout_marginTop="14dp"
             android:text="TextView"
-            app:eventRaceTime="@{event}"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/race_name"
-            tools:text="TEST" />
+            app:layout_constraintTop_toBottomOf="@+id/event_location"
+            app:eventName="@{eventDetailViewModel.event}"/>
+
+        <TextView
+            android:id="@+id/event_race_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="14dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_name"
+            app:eventRaceTime="@{eventDetailViewModel.event}"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>

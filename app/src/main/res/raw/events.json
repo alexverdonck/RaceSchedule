@@ -1,118 +1,8 @@
 [
   {
-    "Location": "Australia",
-    "Name": "FORMULA 1 ROLEX AUSTRALIAN GRAND PRIX 2020",
-    "Sessions": {
-      "Practice 1": "2020-03-13T12:00:00.0000000+11:00",
-      "Practice 2": "2020-03-13T16:00:00.0000000+11:00",
-      "Practice 3": "2020-03-14T14:00:00.0000000+11:00",
-      "Qualifying": "2020-03-14T17:00:00.0000000+11:00",
-      "Race": "2020-03-15T16:10:00.0000000+11:00"
-    }
-  },
-  {
-    "Location": "Bahrain",
-    "Name": "FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2020",
-    "Sessions": {
-      "Practice 1": "2020-03-20T14:00:00.0000000+03:00",
-      "Practice 2": "2020-03-20T18:00:00.0000000+03:00",
-      "Practice 3": "2020-03-21T15:00:00.0000000+03:00",
-      "Qualifying": "2020-03-21T18:00:00.0000000+03:00",
-      "Race": "2020-03-22T18:10:00.0000000+03:00"
-    }
-  },
-  {
-    "Location": "Vietnam",
-    "Name": "FORMULA 1 VINFAST VIETNAM GRAND PRIX 2020",
-    "Sessions": {
-      "Practice 1": "2020-04-03T11:00:00.0000000+07:00",
-      "Practice 2": "2020-04-03T15:00:00.0000000+07:00",
-      "Practice 3": "2020-04-04T12:00:00.0000000+07:00",
-      "Qualifying": "2020-04-04T15:00:00.0000000+07:00",
-      "Race": "2020-04-05T14:10:00.0000000+07:00"
-    }
-  },
-  {
-    "Location": "China",
-    "Name": "FORMULA 1 HEINEKEN CHINESE GRAND PRIX 2020",
-    "Sessions": {
-      "Practice 1": "2020-04-17T11:00:00.0000000+08:00",
-      "Practice 2": "2020-04-17T15:00:00.0000000+08:00",
-      "Practice 3": "2020-04-18T12:00:00.0000000+08:00",
-      "Qualifying": "2020-04-18T15:00:00.0000000+08:00",
-      "Race": "2020-04-19T14:10:00.0000000+08:00"
-    }
-  },
-  {
-    "Location": "Netherlands",
-    "Name": "FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2020",
-    "Sessions": {
-      "Practice 1": "2020-05-01T11:00:00.0000000+02:00",
-      "Practice 2": "2020-05-01T15:00:00.0000000+02:00",
-      "Practice 3": "2020-05-02T12:00:00.0000000+02:00",
-      "Qualifying": "2020-05-02T15:00:00.0000000+02:00",
-      "Race": "2020-05-03T15:10:00.0000000+02:00"
-    }
-  },
-  {
-    "Location": "Spain",
-    "Name": "FORMULA 1 GRAN PREMIO DE ESPAÑA 2020",
-    "Sessions": {
-      "Practice 1": "2020-05-08T11:00:00.0000000+02:00",
-      "Practice 2": "2020-05-08T15:00:00.0000000+02:00",
-      "Practice 3": "2020-05-09T12:00:00.0000000+02:00",
-      "Qualifying": "2020-05-09T15:00:00.0000000+02:00",
-      "Race": "2020-05-10T15:10:00.0000000+02:00"
-    }
-  },
-  {
-    "Location": "Monaco",
-    "Name": "FORMULA 1 GRAND PRIX DE MONACO 2020",
-    "Sessions": {
-      "Practice 1": "2020-05-21T11:00:00.0000000+02:00",
-      "Practice 2": "2020-05-21T15:00:00.0000000+02:00",
-      "Practice 3": "2020-05-23T12:00:00.0000000+02:00",
-      "Qualifying": "2020-05-23T15:00:00.0000000+02:00",
-      "Race": "2020-05-24T15:10:00.0000000+02:00"
-    }
-  },
-  {
-    "Location": "Azerbaijan",
-    "Name": "FORMULA 1 AZERBAIJAN GRAND PRIX 2020",
-    "Sessions": {
-      "Practice 1": "2020-06-05T13:00:00.0000000+04:00",
-      "Practice 2": "2020-06-05T17:00:00.0000000+04:00",
-      "Practice 3": "2020-06-06T14:00:00.0000000+04:00",
-      "Qualifying": "2020-06-06T17:00:00.0000000+04:00",
-      "Race": "2020-06-07T16:10:00.0000000+04:00"
-    }
-  },
-  {
-    "Location": "Canada",
-    "Name": "FORMULA 1 GRAND PRIX DU CANADA 2020",
-    "Sessions": {
-      "Practice 1": "2020-06-12T11:00:00.0000000-04:00",
-      "Practice 2": "2020-06-12T15:00:00.0000000-04:00",
-      "Practice 3": "2020-06-13T11:00:00.0000000-04:00",
-      "Qualifying": "2020-06-13T14:00:00.0000000-04:00",
-      "Race": "2020-06-14T14:10:00.0000000-04:00"
-    }
-  },
-  {
-    "Location": "France",
-    "Name": "FORMULA 1 GRAND PRIX DE FRANCE 2020",
-    "Sessions": {
-      "Practice 1": "2020-06-26T11:00:00.0000000+02:00",
-      "Practice 2": "2020-06-26T15:00:00.0000000+02:00",
-      "Practice 3": "2020-06-27T12:00:00.0000000+02:00",
-      "Qualifying": "2020-06-27T15:00:00.0000000+02:00",
-      "Race": "2020-06-28T15:10:00.0000000+02:00"
-    }
-  },
-  {
-    "Location": "Austria",
-    "Name": "FORMULA 1 MYWORLD GROSSER PREIS VON ÖSTERREICH 2020",
-    "Sessions": {
+    "location": "Austria",
+    "name": "FORMULA 1 ROLEX GROSSER PREIS VON ÖSTERREICH 2020",
+    "sessions": {
       "Practice 1": "2020-07-03T11:00:00.0000000+02:00",
       "Practice 2": "2020-07-03T15:00:00.0000000+02:00",
       "Practice 3": "2020-07-04T12:00:00.0000000+02:00",
@@ -121,31 +11,63 @@
     }
   },
   {
-    "Location": "Great Britain",
-    "Name": "FORMULA 1 PIRELLI BRITISH GRAND PRIX 2020",
-    "Sessions": {
-      "Practice 1": "2020-07-17T11:00:00.0000000+01:00",
-      "Practice 2": "2020-07-17T15:00:00.0000000+01:00",
-      "Practice 3": "2020-07-18T12:00:00.0000000+01:00",
-      "Qualifying": "2020-07-18T15:00:00.0000000+01:00",
-      "Race": "2020-07-19T15:10:00.0000000+01:00"
+    "location": "Austria",
+    "name": "FORMULA 1 PIRELLI GROSSER PREIS DER STEIERMARK 2020",
+    "sessions": {
+      "Practice 1": "2020-07-10T11:00:00.0000000+02:00",
+      "Practice 2": "2020-07-10T15:00:00.0000000+02:00",
+      "Qualifying": "2020-07-11T15:00:00.0000000+02:00",
+      "Race": "2020-07-12T15:10:00.0000000+02:00"
     }
   },
   {
-    "Location": "Hungary",
-    "Name": "FORMULA 1 MAGYAR NAGYDÍJ 2020",
-    "Sessions": {
-      "Practice 1": "2020-07-31T11:00:00.0000000+02:00",
-      "Practice 2": "2020-07-31T15:00:00.0000000+02:00",
-      "Practice 3": "2020-08-01T12:00:00.0000000+02:00",
-      "Qualifying": "2020-08-01T15:00:00.0000000+02:00",
-      "Race": "2020-08-02T15:10:00.0000000+02:00"
+    "location": "Hungary",
+    "name": "FORMULA 1 ARAMCO MAGYAR NAGYDÍJ 2020",
+    "sessions": {
+      "Practice 1": "2020-07-17T11:00:00.0000000+02:00",
+      "Practice 2": "2020-07-17T15:00:00.0000000+02:00",
+      "Practice 3": "2020-07-18T12:00:00.0000000+02:00",
+      "Qualifying": "2020-07-18T15:00:00.0000000+02:00",
+      "Race": "2020-07-19T15:10:00.0000000+02:00"
     }
   },
   {
-    "Location": "Belgium",
-    "Name": "FORMULA 1 ROLEX BELGIAN GRAND PRIX 2020",
-    "Sessions": {
+    "location": "Great Britain",
+    "name": "FORMULA 1 PIRELLI BRITISH GRAND PRIX 2020",
+    "sessions": {
+      "Practice 1": "2020-07-31T11:00:00.0000000+01:00",
+      "Practice 2": "2020-07-31T15:00:00.0000000+01:00",
+      "Practice 3": "2020-08-01T11:00:00.0000000+01:00",
+      "Qualifying": "2020-08-01T14:00:00.0000000+01:00",
+      "Race": "2020-08-02T14:10:00.0000000+01:00"
+    }
+  },
+  {
+    "location": "Great Britain",
+    "name": "EMIRATES FORMULA 1 70TH ANNIVERSARY GRAND PRIX 2020",
+    "sessions": {
+      "Practice 1": "2020-08-07T11:00:00.0000000+01:00",
+      "Practice 2": "2020-08-07T15:00:00.0000000+01:00",
+      "Practice 3": "2020-08-08T11:00:00.0000000+01:00",
+      "Qualifying": "2020-08-08T14:00:00.0000000+01:00",
+      "Race": "2020-08-09T14:10:00.0000000+01:00"
+    }
+  },
+  {
+    "location": "Spain",
+    "name": "FORMULA 1 ARAMCO GRAN PREMIO DE ESPAÑA 2020",
+    "sessions": {
+      "Practice 1": "2020-08-14T11:00:00.0000000+02:00",
+      "Practice 2": "2020-08-14T15:00:00.0000000+02:00",
+      "Practice 3": "2020-08-15T12:00:00.0000000+02:00",
+      "Qualifying": "2020-08-15T15:00:00.0000000+02:00",
+      "Race": "2020-08-16T15:10:00.0000000+02:00"
+    }
+  },
+  {
+    "location": "Belgium",
+    "name": "FORMULA 1 ROLEX BELGIAN GRAND PRIX 2020",
+    "sessions": {
       "Practice 1": "2020-08-28T11:00:00.0000000+02:00",
       "Practice 2": "2020-08-28T15:00:00.0000000+02:00",
       "Practice 3": "2020-08-29T12:00:00.0000000+02:00",
@@ -154,9 +76,9 @@
     }
   },
   {
-    "Location": "Italy",
-    "Name": "FORMULA 1 GRAN PREMIO HEINEKEN D&#39;ITALIA 2020",
-    "Sessions": {
+    "location": "Italy",
+    "name": "FORMULA 1 GRAN PREMIO HEINEKEN D’ITALIA 2020",
+    "sessions": {
       "Practice 1": "2020-09-04T11:00:00.0000000+02:00",
       "Practice 2": "2020-09-04T15:00:00.0000000+02:00",
       "Practice 3": "2020-09-05T12:00:00.0000000+02:00",
@@ -165,20 +87,20 @@
     }
   },
   {
-    "Location": "Singapore",
-    "Name": "FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2020",
-    "Sessions": {
-      "Practice 1": "2020-09-18T16:30:00.0000000+08:00",
-      "Practice 2": "2020-09-18T20:30:00.0000000+08:00",
-      "Practice 3": "2020-09-19T18:00:00.0000000+08:00",
-      "Qualifying": "2020-09-19T21:00:00.0000000+08:00",
-      "Race": "2020-09-20T20:10:00.0000000+08:00"
+    "location": "Italy",
+    "name": "FORMULA 1 PIRELLI GRAN PREMIO DELLA TOSCANA FERRARI 1000 2020",
+    "sessions": {
+      "Practice 1": "2020-09-11T11:00:00.0000000+02:00",
+      "Practice 2": "2020-09-11T15:00:00.0000000+02:00",
+      "Practice 3": "2020-09-12T12:00:00.0000000+02:00",
+      "Qualifying": "2020-09-12T15:00:00.0000000+02:00",
+      "Race": "2020-09-13T15:10:00.0000000+02:00"
     }
   },
   {
-    "Location": "Russia",
-    "Name": "FORMULA 1 VTB RUSSIAN GRAND PRIX 2020",
-    "Sessions": {
+    "location": "Russia",
+    "name": "FORMULA 1 VTB RUSSIAN GRAND PRIX 2020",
+    "sessions": {
       "Practice 1": "2020-09-25T11:00:00.0000000+03:00",
       "Practice 2": "2020-09-25T15:00:00.0000000+03:00",
       "Practice 3": "2020-09-26T12:00:00.0000000+03:00",
@@ -187,58 +109,76 @@
     }
   },
   {
-    "Location": "Japan",
-    "Name": "FORMULA 1 PIRELLI JAPANESE GRAND PRIX 2020",
-    "Sessions": {
-      "Practice 1": "2020-10-09T11:00:00.0000000+09:00",
-      "Practice 2": "2020-10-09T15:00:00.0000000+09:00",
-      "Practice 3": "2020-10-10T12:00:00.0000000+09:00",
-      "Qualifying": "2020-10-10T15:00:00.0000000+09:00",
-      "Race": "2020-10-11T13:10:00.0000000+09:00"
+    "location": "Germany",
+    "name": "FORMULA 1 ARAMCO GROSSER PREIS DER EIFEL 2020",
+    "sessions": {
+      "Practice 3": "2020-10-10T12:00:00.0000000+02:00",
+      "Qualifying": "2020-10-10T15:00:00.0000000+02:00",
+      "Race": "2020-10-11T14:10:00.0000000+02:00"
     }
   },
   {
-    "Location": "United States",
-    "Name": "FORMULA 1 UNITED STATES GRAND PRIX 2020",
-    "Sessions": {
-      "Practice 1": "2020-10-23T11:00:00.0000000-05:00",
-      "Practice 2": "2020-10-23T15:00:00.0000000-05:00",
-      "Practice 3": "2020-10-24T13:00:00.0000000-05:00",
-      "Qualifying": "2020-10-24T16:00:00.0000000-05:00",
-      "Race": "2020-10-25T14:10:00.0000000-05:00"
+    "location": "Portugal",
+    "name": "FORMULA 1 HEINEKEN GRANDE PRÉMIO DE PORTUGAL 2020",
+    "sessions": {
+      "Practice 1": "2020-10-23T11:00:00.0000000+01:00",
+      "Practice 2": "2020-10-23T15:00:00.0000000+01:00",
+      "Practice 3": "2020-10-24T11:00:00.0000000+01:00",
+      "Qualifying": "2020-10-24T14:00:00.0000000+01:00",
+      "Race": "2020-10-25T13:10:00.0000000+00:00"
     }
   },
   {
-    "Location": "Mexico",
-    "Name": "FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2020",
-    "Sessions": {
-      "Practice 1": "2020-10-30T11:00:00.0000000-06:00",
-      "Practice 2": "2020-10-30T15:00:00.0000000-06:00",
-      "Practice 3": "2020-10-31T10:00:00.0000000-06:00",
-      "Qualifying": "2020-10-31T13:00:00.0000000-06:00",
-      "Race": "2020-11-01T13:10:00.0000000-06:00"
+    "location": "Italy",
+    "name": "FORMULA 1 EMIRATES GRAN PREMIO DELL&#39;EMILIA ROMAGNA 2020",
+    "sessions": {
+      "Practice 1": "2020-10-31T10:00:00.0000000+01:00",
+      "Qualifying": "2020-10-31T14:00:00.0000000+01:00",
+      "Race": "2020-11-01T13:10:00.0000000+01:00"
     }
   },
   {
-    "Location": "Brazil",
-    "Name": "FORMULA 1 GRANDE PRÊMIO DO BRASIL 2020",
-    "Sessions": {
-      "Practice 1": "2020-11-13T11:00:00.0000000-03:00",
-      "Practice 2": "2020-11-13T15:00:00.0000000-03:00",
-      "Practice 3": "2020-11-14T12:00:00.0000000-03:00",
-      "Qualifying": "2020-11-14T15:00:00.0000000-03:00",
-      "Race": "2020-11-15T14:10:00.0000000-03:00"
+    "location": "Turkey",
+    "name": "FORMULA 1 DHL TURKISH GRAND PRIX 2020",
+    "sessions": {
+      "Practice 1": "2020-11-13T11:00:00.0000000+03:00",
+      "Practice 2": "2020-11-13T15:00:00.0000000+03:00",
+      "Practice 3": "2020-11-14T12:00:00.0000000+03:00",
+      "Qualifying": "2020-11-14T15:00:00.0000000+03:00",
+      "Race": "2020-11-15T13:10:00.0000000+03:00"
     }
   },
   {
-    "Location": "Abu Dhabi",
-    "Name": "FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2020",
-    "Sessions": {
-      "Practice 1": "2020-11-27T13:00:00.0000000+04:00",
-      "Practice 2": "2020-11-27T17:00:00.0000000+04:00",
-      "Practice 3": "2020-11-28T14:00:00.0000000+04:00",
-      "Qualifying": "2020-11-28T17:00:00.0000000+04:00",
-      "Race": "2020-11-29T17:10:00.0000000+04:00"
+    "location": "Bahrain",
+    "name": "FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2020",
+    "sessions": {
+      "Practice 1": "2020-11-27T14:00:00.0000000+03:00",
+      "Practice 2": "2020-11-27T18:00:00.0000000+03:00",
+      "Practice 3": "2020-11-28T14:00:00.0000000+03:00",
+      "Qualifying": "2020-11-28T17:00:00.0000000+03:00",
+      "Race": "2020-11-29T17:10:00.0000000+03:00"
+    }
+  },
+  {
+    "location": "Bahrain",
+    "name": "FORMULA 1 ROLEX SAKHIR GRAND PRIX 2020",
+    "sessions": {
+      "Practice 1": "2020-12-04T16:30:00.0000000+03:00",
+      "Practice 2": "2020-12-04T20:30:00.0000000+03:00",
+      "Practice 3": "2020-12-05T17:00:00.0000000+03:00",
+      "Qualifying": "2020-12-05T20:00:00.0000000+03:00",
+      "Race": "2020-12-06T20:10:00.0000000+03:00"
+    }
+  },
+  {
+    "location": "Abu Dhabi",
+    "name": "FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2020",
+    "sessions": {
+      "Practice 1": "2020-12-11T13:00:00.0000000+04:00",
+      "Practice 2": "2020-12-11T17:00:00.0000000+04:00",
+      "Practice 3": "2020-12-12T14:00:00.0000000+04:00",
+      "Qualifying": "2020-12-12T17:00:00.0000000+04:00",
+      "Race": "2020-12-13T17:10:00.0000000+04:00"
     }
   }
 ]

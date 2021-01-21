@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/eventTrackerFragment">
+
+    <fragment
+        android:id="@+id/eventTrackerFragment"
+        android:name="com.github.alexverdonck.raceschedule.eventtracker.EventTrackerFragment"
+        android:label="EventTrackerFragment"
+        tools:layout="@layout/fragment_event_tracker">
+        <action
+            android:id="@+id/action_eventTrackerFragment_to_eventDetailFragment"
+            app:destination="@id/eventDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventDetailFragment"
+        android:name="com.github.alexverdonck.raceschedule.eventdetail.EventDetailFragment"
+        android:label="EventDetailFragment" >
+        <action
+            android:id="@+id/action_eventDetailFragment_to_eventTrackerFragment"
+            app:destination="@id/eventTrackerFragment"
+            app:popUpToInclusive="true" />
+        <argument android:name="selectedEvent"
+            app:argType="com.github.alexverdonck.raceschedule.data.Event" />
+    </fragment>
+</navigation>

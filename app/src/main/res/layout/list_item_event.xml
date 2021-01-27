@@ -20,15 +20,14 @@
         android:onClick="@{() ->clickListener.onClick(event)}">
 
         <TextView
-            android:id="@+id/event_name"
+            android:id="@+id/event_location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="14dp"
             android:layout_marginTop="14dp"
-            android:text="TextView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:eventName="@{event}"/>
+            app:eventLocation="@{event}"/>
 
         <TextView
             android:id="@+id/race_time"
@@ -36,9 +35,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="14dp"
             android:layout_marginTop="14dp"
-            android:text="TextView"
             app:eventRaceTime="@{event}"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/event_name"/>
+            app:layout_constraintTop_toBottomOf="@+id/event_location"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

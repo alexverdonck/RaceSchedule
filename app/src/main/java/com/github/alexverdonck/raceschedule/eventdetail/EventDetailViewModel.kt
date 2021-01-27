@@ -16,4 +16,5 @@ class EventDetailViewModel(private val selectedEvent: Event) : ViewModel() {
     }
 
 
+
 }

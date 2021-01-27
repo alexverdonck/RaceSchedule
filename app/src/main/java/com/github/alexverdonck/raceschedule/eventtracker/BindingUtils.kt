@@ -26,3 +26,10 @@ fun TextView.setEventTime(item: Event?) {
         text = item.sessions["Race"].toString()// need to format this for time/countdown/live/localtime stuff
     }
 }
+
+@BindingAdapter("eventSession")
+fun TextView.setEventSession(item: String?) {
+    item?.let {
+        text = item// change, need to display each session
+    }
+}

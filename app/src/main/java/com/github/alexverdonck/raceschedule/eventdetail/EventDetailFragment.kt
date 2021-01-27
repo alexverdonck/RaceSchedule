@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.github.alexverdonck.raceschedule.R
 import com.github.alexverdonck.raceschedule.data.Event
@@ -24,9 +25,24 @@ class EventDetailFragment : Fragment() {
 
         val eventDetailViewModel = ViewModelProvider(this, viewModelFactory).get(EventDetailViewModel::class.java)
 
+        val adapter = SessionAdapter()
+
+        binding.eventSessions.adapter = adapter
+
         binding.eventDetailViewModel = eventDetailViewModel
 
         binding.lifecycleOwner = this
+
+        eventDetailViewModel.event.observe(viewLifecycleOwner, Observer {
+            it?.let {
+                // convert map to a list
+                val list: ArrayList<String> = ArrayList()
+                for ((k, v) in it.sessions) {
+                    list.add("$k: $v")
+                }
+                adapter.submitList(list)
+            }
+        })
 
         return binding.root
 

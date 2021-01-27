@@ -21,7 +21,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="14dp"
             android:layout_marginTop="14dp"
-            android:text="TextView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:eventLocation="@{eventDetailViewModel.event}"/>
@@ -32,21 +31,25 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="14dp"
             android:layout_marginTop="14dp"
-            android:text="TextView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/event_location"
             app:eventName="@{eventDetailViewModel.event}"/>
 
-        <TextView
-            android:id="@+id/event_race_time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/event_sessions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginStart="14dp"
             android:layout_marginTop="14dp"
-            android:text="TextView"
+            android:layout_marginEnd="14dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/event_name"
-            app:eventRaceTime="@{eventDetailViewModel.event}"/>
+            app:layout_constraintVertical_bias="0.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

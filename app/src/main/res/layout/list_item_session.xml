@@ -19,12 +19,9 @@
             android:id="@+id/event_session"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="14dp"
-            android:text="TextView"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:eventSession="@{session}"/>
+            app:eventSession="@{session}"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="14dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

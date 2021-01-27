@@ -9,11 +9,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.github.alexverdonck.raceschedule.R
-import com.github.alexverdonck.raceschedule.data.Event
 import com.github.alexverdonck.raceschedule.databinding.FragmentEventDetailBinding
-import java.text.SimpleDateFormat
 import java.time.ZoneId
-import java.time.ZoneOffset
 import java.time.format.DateTimeFormatter
 
 class EventDetailFragment : Fragment() {

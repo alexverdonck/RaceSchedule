@@ -5,7 +5,6 @@ import androidx.databinding.BindingAdapter
 import com.github.alexverdonck.raceschedule.data.Event
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
-import java.time.format.FormatStyle
 
 val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("d MMM yyyy h:mm a")
 

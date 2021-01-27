@@ -11,6 +11,10 @@ import androidx.lifecycle.ViewModelProvider
 import com.github.alexverdonck.raceschedule.R
 import com.github.alexverdonck.raceschedule.data.Event
 import com.github.alexverdonck.raceschedule.databinding.FragmentEventDetailBinding
+import java.text.SimpleDateFormat
+import java.time.ZoneId
+import java.time.ZoneOffset
+import java.time.format.DateTimeFormatter
 
 class EventDetailFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -35,12 +39,9 @@ class EventDetailFragment : Fragment() {
 
         eventDetailViewModel.event.observe(viewLifecycleOwner, Observer {
             it?.let {
-                // convert map to a list
-                val list: ArrayList<String> = ArrayList()
-                for ((k, v) in it.sessions) {
-                    list.add("$k: $v")
-                }
-                adapter.submitList(list)
+                // convert map to a list and format session times
+                val formatter = DateTimeFormatter.ofPattern("d MMM yyyy h:mm a")
+                adapter.submitList(it.sessions.map {it.key + ": " + it.value.format(formatter.withZone(ZoneId.systemDefault()))})
             }
         })
 

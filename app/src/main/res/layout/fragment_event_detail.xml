@@ -17,23 +17,27 @@
 
         <TextView
             android:id="@+id/event_location"
+            style="@style/ItemHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
+            app:eventLocation="@{eventDetailViewModel.event}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:eventLocation="@{eventDetailViewModel.event}"/>
+            tools:text="Text" />
 
         <TextView
             android:id="@+id/event_name"
-            android:layout_width="wrap_content"
+            style="@style/ItemContent"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             app:eventName="@{eventDetailViewModel.event}"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/event_location" />
+            app:layout_constraintTop_toBottomOf="@+id/event_location"
+            tools:text="Text" />
 
 
         <androidx.recyclerview.widget.RecyclerView

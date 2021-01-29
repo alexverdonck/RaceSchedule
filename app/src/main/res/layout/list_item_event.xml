@@ -23,20 +23,26 @@
             android:id="@+id/event_location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="14dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            style="@style/ItemHeader"
+            app:eventLocation="@{event}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:eventLocation="@{event}"/>
+            tools:text="Text" />
 
         <TextView
             android:id="@+id/race_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="14dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            style="@style/ItemContent"
             app:eventRaceTime="@{event}"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/event_location"/>
+            app:layout_constraintTop_toBottomOf="@+id/event_location"
+            tools:text="Text" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

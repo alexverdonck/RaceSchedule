@@ -1,2 +1,2 @@
 # RaceSchedule
-WIP of a calendar of F1 events for Android
+Schedule/Countdown of F1 sessions for Android

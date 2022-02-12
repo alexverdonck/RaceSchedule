@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import java.lang.IllegalArgumentException
 
 class EventTrackerViewModelFactory(private val application: Application) : ViewModelProvider.Factory {
-    override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(EventTrackerViewModel::class.java)) {
             return EventTrackerViewModel(application) as T
         }

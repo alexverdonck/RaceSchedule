@@ -1,7 +1,7 @@
 package com.github.alexverdonck.raceschedule.data
 
 import android.os.Parcelable
-import kotlinx.android.parcel.Parcelize
+import kotlinx.parcelize.Parcelize
 import kotlinx.serialization.*
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.descriptors.PrimitiveKind
@@ -11,7 +11,7 @@ import kotlinx.serialization.encoding.Decoder
 import kotlinx.serialization.encoding.Encoder
 import java.time.OffsetDateTime
 import java.time.format.DateTimeFormatter
-    // add item id
+
 @Serializable
 @Parcelize
 data class Event(val location: String?,

@@ -47,7 +47,7 @@ class EventListener(val clickListener: (event: Event) -> Unit) {
 
 class EventDiffCallback : DiffUtil.ItemCallback<Event>() {
     override fun areItemsTheSame(oldItem: Event, newItem: Event): Boolean {
-        return oldItem.name == newItem.name //  add item ids use name for now
+        return oldItem.name == newItem.name
     }
 
     override fun areContentsTheSame(oldItem: Event, newItem: Event): Boolean {

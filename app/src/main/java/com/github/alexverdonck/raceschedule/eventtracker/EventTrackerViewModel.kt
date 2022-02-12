@@ -19,7 +19,7 @@ class EventTrackerViewModel(application: Application) : AndroidViewModel(applica
     fun Context.getRawInput(@RawRes resourceId: Int): InputStream {
         return resources.openRawResource(resourceId)
     }
-    init {  // add item id
+    init {
         try {
             val res: InputStream = context.resources.openRawResource(R.raw.events)
             val inputStreamReader = InputStreamReader(res)
@@ -40,7 +40,7 @@ class EventTrackerViewModel(application: Application) : AndroidViewModel(applica
     }
 
     // navigation stuff
-    private val _navigateToEventDetail = MutableLiveData<Event>()
+    private val _navigateToEventDetail = MutableLiveData<Event?>()
     val navigateToEventDetail
         get() = _navigateToEventDetail
 

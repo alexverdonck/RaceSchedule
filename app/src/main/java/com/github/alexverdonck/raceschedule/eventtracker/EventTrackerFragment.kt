@@ -35,9 +35,9 @@ class EventTrackerFragment : Fragment() {
         binding.eventList.adapter = adapter
 
         // add a divider between items
-        binding.eventList.apply {
-            addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
-        }
+        //binding.eventList.apply {
+           //addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
+        //}
 
         eventTrackerViewModel.navigateToEventDetail.observe(viewLifecycleOwner) { event ->
             event?.let {

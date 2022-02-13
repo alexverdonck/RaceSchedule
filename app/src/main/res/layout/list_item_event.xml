@@ -8,6 +8,7 @@
         <variable
             name="event"
             type="com.github.alexverdonck.raceschedule.data.Event" />
+
         <variable
             name="clickListener"
             type="com.github.alexverdonck.raceschedule.eventtracker.EventListener" />
@@ -16,43 +17,56 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:onClick="@{() ->clickListener.onClick(event)}">
+        android:onClick="@{() ->clickListener.onClick(event)}"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/event_location"
+            style="@style/ItemHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            style="@style/ItemHeader"
             app:eventLocation="@{event}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Text" />
+            tools:text="Location" />
 
         <TextView
             android:id="@+id/race_time"
+            style="@style/ItemContent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="8dp"
-            style="@style/ItemContent"
             app:eventRaceTime="@{event}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/event_location"
-            tools:text="Text" />
+            tools:text="Race Time" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/next_session"
+            style="@style/ItemNextSession"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
             app:eventNextSession="@{event}"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Next Session" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_chevron_right_24"
+            app:tint="@color/orange_700" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

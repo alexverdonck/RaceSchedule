@@ -9,4 +9,9 @@
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/gray_700</item>
     </style>
+    <style name="ItemNextSession">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray_700</item>
+        <item name="android:textAlignment">center</item>
+    </style>
 </resources>

@@ -34,20 +34,22 @@ fun Event.nextSession(): String {
         return "Race over"
     }
 
-    var nextSession: OffsetDateTime? = null
+    var nextSessionTime: OffsetDateTime? = null
+    var nextSessionName = ""
     for (session in sessions) {
         if (session.value > currentTime) {
-            nextSession = session.value
+            nextSessionTime = session.value
+            nextSessionName = session.key
             break
         }
     }
 
-    if (nextSession == null) {
+    if (nextSessionTime == null) {
         return "LIVE!"
     }
 
-    val timeUntil = OffsetDateTime.now(nextSession.offset)
-        .until(nextSession, ChronoUnit.MINUTES)
+    val timeUntil = OffsetDateTime.now(nextSessionTime.offset)
+        .until(nextSessionTime, ChronoUnit.MINUTES)
 
     val duration = timeUntil.toDuration(DurationUnit.MINUTES)
     val d = duration.inWholeDays
@@ -55,10 +57,11 @@ fun Event.nextSession(): String {
     val m = duration.inWholeMinutes % 60
 
     if (d < 32) {
-        return "$d days $h hours $m minutes"
+        return "$nextSessionName: $d days $h hours $m minutes"
     }
     val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("d MMM yyyy h:mm a")
-    return nextSession.format(formatter.withZone(ZoneId.systemDefault()))
+    val formattedTime = nextSessionTime.format(formatter.withZone(ZoneId.systemDefault()))
+    return "$nextSessionName\n$formattedTime"
 }
 
 

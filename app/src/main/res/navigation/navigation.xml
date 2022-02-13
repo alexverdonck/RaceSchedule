@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/eventTrackerFragment"
         android:name="com.github.alexverdonck.raceschedule.eventtracker.EventTrackerFragment"
-        android:label="EventTrackerFragment"
+        android:label="RaceSchedule"
         tools:layout="@layout/fragment_event_tracker">
         <action
             android:id="@+id/action_eventTrackerFragment_to_eventDetailFragment"
@@ -21,7 +21,7 @@
     <fragment
         android:id="@+id/eventDetailFragment"
         android:name="com.github.alexverdonck.raceschedule.eventdetail.EventDetailFragment"
-        android:label="EventDetailFragment">
+        android:label="Sessions">
         <action
             android:id="@+id/action_eventDetailFragment_to_eventTrackerFragment"
             app:destination="@id/eventTrackerFragment"

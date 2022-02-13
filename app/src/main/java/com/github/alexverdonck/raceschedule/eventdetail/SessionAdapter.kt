@@ -19,7 +19,7 @@ class SessionAdapter : ListAdapter<String, SessionAdapter.ViewHolder>(EventDiffC
         return ViewHolder.from(parent)
     }
 
-    class ViewHolder private constructor(val binding: ListItemSessionBinding) :
+    class ViewHolder private constructor(private val binding: ListItemSessionBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(item: String) {
             binding.session = item

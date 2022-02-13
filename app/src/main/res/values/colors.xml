@@ -10,6 +10,7 @@
     <color name="gray_900">#212121</color>
     <color name="gray_700">#616161</color>
     <color name="gray_50">#FAFAFA</color>
+    <color name="orange_800">#A30000</color>
     <color name="orange_700">#DD2C00</color>
-    <color name="orange_500">#FF5722</color>
+    <color name="orange_500">#FF6434</color>
 </resources>

@@ -3,13 +3,12 @@ package com.github.alexverdonck.raceschedule.eventtracker
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.github.alexverdonck.raceschedule.data.Event
 import com.github.alexverdonck.raceschedule.databinding.ListItemEventBinding
 
-class EventAdapter(val clickListener: EventListener) :
+class EventAdapter(private val clickListener: EventListener) :
     ListAdapter<Event, EventAdapter.ViewHolder>(EventDiffCallback()) {
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -22,7 +21,7 @@ class EventAdapter(val clickListener: EventListener) :
         return ViewHolder.from(parent)
     }
 
-    class ViewHolder private constructor(val binding: ListItemEventBinding) :
+    class ViewHolder private constructor(private val binding: ListItemEventBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(item: Event, clickListener: EventListener) {
             binding.event = item

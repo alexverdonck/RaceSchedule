@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
@@ -15,7 +14,7 @@ import com.github.alexverdonck.raceschedule.databinding.FragmentEventTrackerBind
 
 
 class EventTrackerFragment : Fragment() {
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
 
         val binding: FragmentEventTrackerBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_event_tracker, container, false)
 
@@ -23,7 +22,7 @@ class EventTrackerFragment : Fragment() {
 
         val viewModelFactory = EventTrackerViewModelFactory(application)
 
-        val eventTrackerViewModel = ViewModelProvider(this, viewModelFactory).get(EventTrackerViewModel::class.java)
+        val eventTrackerViewModel = ViewModelProvider(this, viewModelFactory)[EventTrackerViewModel::class.java]
 
         binding.eventTrackerViewModel = eventTrackerViewModel
 
@@ -40,18 +39,22 @@ class EventTrackerFragment : Fragment() {
             addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
         }
 
-        eventTrackerViewModel.navigateToEventDetail.observe(viewLifecycleOwner, Observer {event ->
+        eventTrackerViewModel.navigateToEventDetail.observe(viewLifecycleOwner) { event ->
             event?.let {
-                this.findNavController().navigate(EventTrackerFragmentDirections.actionEventTrackerFragmentToEventDetailFragment(event))
+                this.findNavController().navigate(
+                    EventTrackerFragmentDirections.actionEventTrackerFragmentToEventDetailFragment(
+                        event
+                    )
+                )
                 eventTrackerViewModel.onEventDetailNavigated()
             }
-        })
+        }
 
-        eventTrackerViewModel.events.observe(viewLifecycleOwner, Observer {
+        eventTrackerViewModel.events.observe(viewLifecycleOwner) {
             it?.let {
                 adapter.submitList(it)
             }
-        })
+        }
 
         return binding.root
     }

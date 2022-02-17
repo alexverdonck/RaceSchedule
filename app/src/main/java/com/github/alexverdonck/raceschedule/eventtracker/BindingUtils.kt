@@ -4,6 +4,7 @@ import android.widget.TextView
 import androidx.databinding.BindingAdapter
 import com.github.alexverdonck.raceschedule.data.Event
 import com.github.alexverdonck.raceschedule.data.nextSession
+import java.time.OffsetDateTime
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
 
@@ -30,16 +31,23 @@ fun TextView.setEventTime(item: Event?) {
     }
 }
 
-@BindingAdapter("eventSession")
-fun TextView.setEventSession(item: String?) {
-    item?.let {
-        text = item
-    }
-}
-
 @BindingAdapter("eventNextSession")
 fun TextView.setEventNextSession(item: Event?) {
     item?.let {
         text = item.nextSession()
+    }
+}
+
+@BindingAdapter("eventSessionTime")
+fun TextView.setEventSessionTime(item: Pair<String, OffsetDateTime>?) {
+    item?.let {
+        text = item.second.format(formatter.withZone(ZoneId.systemDefault()))
+    }
+}
+
+@BindingAdapter("eventSessionName")
+fun TextView.setEventSessionName(item: Pair<String, OffsetDateTime>?) {
+    item?.let {
+        text = item.first
     }
 }

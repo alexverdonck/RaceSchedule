@@ -9,8 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.github.alexverdonck.raceschedule.R
 import com.github.alexverdonck.raceschedule.databinding.FragmentEventDetailBinding
-import java.time.ZoneId
-import java.time.format.DateTimeFormatter
 
 class EventDetailFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
@@ -35,15 +33,8 @@ class EventDetailFragment : Fragment() {
 
         eventDetailViewModel.event.observe(viewLifecycleOwner) {
             it?.let {
-                // convert map to a list and format session times
-                val formatter = DateTimeFormatter.ofPattern("d MMM yyyy h:mm a")
-                adapter.submitList(it.sessions.map {
-                    it.key + ": " + it.value.format(
-                        formatter.withZone(
-                            ZoneId.systemDefault()
-                        )
-                    )
-                })
+                // convert map to a list
+                adapter.submitList(it.sessions.toList())
             }
         }
 

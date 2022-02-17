@@ -6,12 +6,12 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.github.alexverdonck.raceschedule.databinding.ListItemSessionBinding
+import java.time.OffsetDateTime
 
-class SessionAdapter : ListAdapter<String, SessionAdapter.ViewHolder>(EventDiffCallback()) {
+class SessionAdapter : ListAdapter<Pair<String, OffsetDateTime>, SessionAdapter.ViewHolder>(EventDiffCallback()) {
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = getItem(position)
-
         holder.bind(item)
     }
 
@@ -21,7 +21,7 @@ class SessionAdapter : ListAdapter<String, SessionAdapter.ViewHolder>(EventDiffC
 
     class ViewHolder private constructor(private val binding: ListItemSessionBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun bind(item: String) {
+        fun bind(item: Pair<String, OffsetDateTime>) {
             binding.session = item
             binding.executePendingBindings()
         }
@@ -37,12 +37,12 @@ class SessionAdapter : ListAdapter<String, SessionAdapter.ViewHolder>(EventDiffC
     }
 }
 
-class EventDiffCallback : DiffUtil.ItemCallback<String>() {
-    override fun areItemsTheSame(oldItem: String, newItem: String): Boolean {
+class EventDiffCallback : DiffUtil.ItemCallback<Pair<String, OffsetDateTime>>() {
+    override fun areItemsTheSame(oldItem: Pair<String, OffsetDateTime>, newItem: Pair<String, OffsetDateTime>): Boolean {
         return oldItem == newItem
     }
 
-    override fun areContentsTheSame(oldItem: String, newItem: String): Boolean {
+    override fun areContentsTheSame(oldItem: Pair<String, OffsetDateTime>, newItem: Pair<String, OffsetDateTime>): Boolean {
         return oldItem == newItem
     }
 }

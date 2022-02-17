@@ -7,7 +7,7 @@
 
         <variable
             name="session"
-            type="java.lang.String" />
+            type="kotlin.Pair&lt;String, java.time.OffsetDateTime>" />
     </data>
 
     <androidx.cardview.widget.CardView
@@ -21,19 +21,31 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/event_session"
+                android:id="@+id/event_session_name"
+                style="@style/ItemHeader"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginStart="8dp"
-                app:eventSession="@{session}"
+                android:layout_marginTop="8dp"
+                app:eventSessionName="@{session}"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="Text" />
+                tools:text="Session Name" />
+
+            <TextView
+                android:id="@+id/event_session_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:eventSessionTime="@{session}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/event_session_name"
+                tools:text="Session Time" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

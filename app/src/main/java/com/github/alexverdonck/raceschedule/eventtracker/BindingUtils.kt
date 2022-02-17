@@ -39,14 +39,19 @@ fun TextView.setEventNextSession(item: Event?) {
 }
 
 @BindingAdapter("eventSessionTime")
-fun TextView.setEventSessionTime(item: Pair<String, OffsetDateTime>?) {
+fun TextView.setEventSessionTime(item: Pair<String, OffsetDateTime?>?) {
     item?.let {
-        text = item.second.format(formatter.withZone(ZoneId.systemDefault()))
+        text = if (item.second == null) {
+            "TBC"
+        } else {
+            item.second!!.format(formatter.withZone(ZoneId.systemDefault()))
+        }
+
     }
 }
 
 @BindingAdapter("eventSessionName")
-fun TextView.setEventSessionName(item: Pair<String, OffsetDateTime>?) {
+fun TextView.setEventSessionName(item: Pair<String, OffsetDateTime?>?) {
     item?.let {
         text = item.first
     }

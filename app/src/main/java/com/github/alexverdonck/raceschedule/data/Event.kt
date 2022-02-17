@@ -9,6 +9,7 @@ import kotlinx.serialization.descriptors.PrimitiveSerialDescriptor
 import kotlinx.serialization.descriptors.SerialDescriptor
 import kotlinx.serialization.encoding.Decoder
 import kotlinx.serialization.encoding.Encoder
+import java.lang.Exception
 import java.time.OffsetDateTime
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
@@ -22,7 +23,7 @@ import kotlin.time.toDuration
 data class Event(
     val location: String?,
     val name: String?,
-    val sessions: Map<String, @Serializable(OffsetDateTimeSerializer::class) OffsetDateTime>
+    val sessions: Map<String, @Serializable(OffsetDateTimeSerializer::class) OffsetDateTime?>
 ) :
     Parcelable
 
@@ -37,15 +38,17 @@ fun Event.nextSession(): String {
     var nextSessionTime: OffsetDateTime? = null
     var nextSessionName = ""
     for (session in sessions) {
-        if (session.value > currentTime) {
-            nextSessionTime = session.value
-            nextSessionName = session.key
-            break
+        if (session.value != null) {
+            if (session.value!! > currentTime) {
+                nextSessionTime = session.value
+                nextSessionName = session.key
+                break
+            }
         }
     }
 
     if (nextSessionTime == null) {
-        return "LIVE!"
+        return "LIVE!" // todo fix for when time TBC
     }
 
     val timeUntil = OffsetDateTime.now(nextSessionTime.offset)
@@ -57,7 +60,7 @@ fun Event.nextSession(): String {
     val m = duration.inWholeMinutes % 60
 
     if (d < 32) {
-        return "$nextSessionName: $d days $h hours $m minutes"
+        return "$nextSessionName\n$d days $h hours $m minutes"
     }
     val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("d MMM yyyy h:mm a")
     val formattedTime = nextSessionTime.format(formatter.withZone(ZoneId.systemDefault()))
@@ -65,19 +68,23 @@ fun Event.nextSession(): String {
 }
 
 
-object OffsetDateTimeSerializer : KSerializer<OffsetDateTime> {
+object OffsetDateTimeSerializer : KSerializer<OffsetDateTime?> {
     override val descriptor: SerialDescriptor =
         PrimitiveSerialDescriptor("OffsetDateTime", PrimitiveKind.STRING)
 
-    override fun serialize(encoder: Encoder, value: OffsetDateTime) {
+    override fun serialize(encoder: Encoder, value: OffsetDateTime?) {
         val format = DateTimeFormatter.ISO_OFFSET_DATE_TIME
 
         val string = format.format(value)
         encoder.encodeString(string)
     }
 
-    override fun deserialize(decoder: Decoder): OffsetDateTime {
+    override fun deserialize(decoder: Decoder): OffsetDateTime? {
         val string = decoder.decodeString()
-        return OffsetDateTime.parse(string)
+        return try {
+            OffsetDateTime.parse(string)
+        } catch (e: Exception) {
+            null
+        }
     }
 }

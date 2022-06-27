@@ -62,7 +62,7 @@ fun Event.nextSession(): String {
     if (d < 32) {
         return "$nextSessionName\n$d days $h hours $m minutes"
     }
-    val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("d MMM yyyy h:mm a")
+    val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("d MMM h:mm a")
     val formattedTime = nextSessionTime.format(formatter.withZone(ZoneId.systemDefault()))
     return "$nextSessionName\n$formattedTime"
 }

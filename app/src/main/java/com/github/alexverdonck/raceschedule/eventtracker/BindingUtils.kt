@@ -49,7 +49,6 @@ fun TextView.setEventSessionTime(item: Pair<String, OffsetDateTime?>?) {
         } else {
             item.second!!.format(formatter.withZone(ZoneId.systemDefault()))
         }
-
     }
 }
 
@@ -61,8 +60,7 @@ fun TextView.setEventSessionName(item: Pair<String, OffsetDateTime?>?) {
 }
 
 @BindingAdapter("eventSessionCountdown")
-fun TextView.setSessionCountdown(item: Pair<String, OffsetDateTime?>?)
-{
+fun TextView.setSessionCountdown(item: Pair<String, OffsetDateTime?>?) {
     item?.let {
         text = sessionCountdown(item.second)
     }
@@ -70,27 +68,21 @@ fun TextView.setSessionCountdown(item: Pair<String, OffsetDateTime?>?)
 
 // todo cleanup
 fun sessionCountdown(sessionTime: OffsetDateTime?): String {
-    if (sessionTime == null)
-    {
+    if (sessionTime == null) {
         return ""
     }
     val currentTime = OffsetDateTime.now(sessionTime?.offset)
     if (sessionTime?.plusHours(2)?.isBefore(currentTime)!!) {
         return "Complete"
     } else if (sessionTime?.isBefore(currentTime)) {
-        return "Live"
-    } else {
-        val timeUntil = OffsetDateTime.now(sessionTime?.offset)
-            .until(sessionTime, ChronoUnit.MINUTES)
-
-        val duration = timeUntil.toDuration(DurationUnit.MINUTES)
-        val d = duration.inWholeDays
-        val h = duration.inWholeHours % 24
-        val m = duration.inWholeMinutes % 60
-
-        if (d < 7) {
-            return "$d days $h hours $m minutes"
-        }
+        return "Live!"
     }
-    return ""
+    val timeUntil = OffsetDateTime.now(sessionTime?.offset)
+        .until(sessionTime, ChronoUnit.MINUTES)
+
+    val duration = timeUntil.toDuration(DurationUnit.MINUTES)
+    val d = duration.inWholeDays
+    val h = duration.inWholeHours % 24
+    val m = duration.inWholeMinutes % 60
+    return "${d}d ${h}h ${m}m"
 }

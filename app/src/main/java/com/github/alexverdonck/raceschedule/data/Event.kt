@@ -59,7 +59,7 @@ fun Event.nextSession(): String {
     val h = duration.inWholeHours % 24
     val m = duration.inWholeMinutes % 60
 
-    if (d < 32) {
+    if (d < 30) {
         return "$nextSessionName\n$d days $h hours $m minutes"
     }
     val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("d MMM h:mm a")

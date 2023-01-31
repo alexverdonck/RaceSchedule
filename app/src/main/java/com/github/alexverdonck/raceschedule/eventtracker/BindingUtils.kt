@@ -71,13 +71,13 @@ fun sessionCountdown(sessionTime: OffsetDateTime?): String {
     if (sessionTime == null) {
         return ""
     }
-    val currentTime = OffsetDateTime.now(sessionTime?.offset)
-    if (sessionTime?.plusHours(2)?.isBefore(currentTime)!!) {
+    val currentTime = OffsetDateTime.now(sessionTime.offset)
+    if (sessionTime.plusHours(2).isBefore(currentTime)) {
         return "Complete"
-    } else if (sessionTime?.isBefore(currentTime)) {
+    } else if (sessionTime.isBefore(currentTime)) {
         return "Live!"
     }
-    val timeUntil = OffsetDateTime.now(sessionTime?.offset)
+    val timeUntil = OffsetDateTime.now(sessionTime.offset)
         .until(sessionTime, ChronoUnit.MINUTES)
 
     val duration = timeUntil.toDuration(DurationUnit.MINUTES)

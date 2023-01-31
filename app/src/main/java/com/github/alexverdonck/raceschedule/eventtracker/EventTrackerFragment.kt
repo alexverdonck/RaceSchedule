@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import com.github.alexverdonck.raceschedule.R
+import com.github.alexverdonck.raceschedule.data.Events
 import com.github.alexverdonck.raceschedule.databinding.FragmentEventTrackerBinding
 
 
@@ -50,11 +51,16 @@ class EventTrackerFragment : Fragment() {
             }
         }
 
-        eventTrackerViewModel.events.observe(viewLifecycleOwner) {
+        Events.events.observe(viewLifecycleOwner) {
             it?.let {
                 adapter.submitList(it)
             }
         }
+        //eventTrackerViewModel.events.observe(viewLifecycleOwner) {
+        //    it?.let {
+        //        adapter.submitList(it)
+        //    }
+        //}
 
         return binding.root
     }

@@ -16,6 +16,10 @@
         <entry key="..\:/AndroidApps/RaceSchedule/app/src/main/res/layout/fragment_event_tracker.xml" value="0.1" />
         <entry key="..\:/AndroidApps/RaceSchedule/app/src/main/res/layout/list_item_event.xml" value="0.33" />
         <entry key="..\:/AndroidApps/RaceSchedule/app/src/main/res/layout/list_item_session.xml" value="0.67" />
+        <entry key="..\:/Source/RaceSchedule/app/src/main/res/drawable-v21/app_widget_background.xml" value="0.378" />
+        <entry key="..\:/Source/RaceSchedule/app/src/main/res/drawable-v21/app_widget_inner_view_background.xml" value="0.378" />
+        <entry key="..\:/Source/RaceSchedule/app/src/main/res/drawable/ic_baseline_chevron_right_24.xml" value="0.378" />
+        <entry key="..\:/Source/RaceSchedule/app/src/main/res/drawable/ic_launcher_background.xml" value="0.378" />
         <entry key="..\:/Source/RaceSchedule/app/src/main/res/layout/activity_main.xml" value="0.5027173913043478" />
         <entry key="..\:/Source/RaceSchedule/app/src/main/res/layout/fragment_event_detail.xml" value="0.5027173913043478" />
         <entry key="..\:/Source/RaceSchedule/app/src/main/res/layout/fragment_event_tracker.xml" value="0.5027173913043478" />

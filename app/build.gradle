@@ -8,12 +8,12 @@ plugins {
 }
 
 android {
-    compileSdkVersion 31
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.github.alexverdonck.raceschedule"
         minSdkVersion 26
-        targetSdkVersion 31
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -38,6 +38,7 @@ android {
         dataBinding true
         viewBinding true
     }
+    namespace 'com.github.alexverdonck.raceschedule'
 }
 
 

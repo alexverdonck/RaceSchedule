@@ -3,18 +3,18 @@
 
     <style name="ItemHeader">
         <item name="android:textSize">18sp</item>
-        <item name="android:textColor">@color/gray_900</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="ItemContent">
         <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/gray_700</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
     </style>
 
     <style name="ItemNextSession">
         <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/gray_700</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
         <item name="android:textAlignment">center</item>
     </style>
 

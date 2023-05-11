@@ -38,7 +38,7 @@
     "sessions": {
       "Practice 1": "2023-04-28T13:30:00.0000000+04:00",
       "Qualifying": "2023-04-28T17:00:00.0000000+04:00",
-      "Practice 2": "2023-04-29T13:30:00.0000000+04:00",
+      "Sprint Shootout": "2023-04-29T12:30:00.0000000+04:00",
       "Sprint": "2023-04-29T17:30:00.0000000+04:00",
       "Race": "2023-04-30T15:00:00.0000000+04:00"
     }
@@ -133,7 +133,7 @@
   },
   {
     "location": "Belgium",
-    "name": "FORMULA 1 BELGIAN GRAND PRIX 2023",
+    "name": "FORMULA 1 MSC CRUISES BELGIAN GRAND PRIX 2023",
     "sessions": {
       "Practice 1": "2023-07-28T13:30:00.0000000+02:00",
       "Qualifying": "2023-07-28T17:00:00.0000000+02:00",

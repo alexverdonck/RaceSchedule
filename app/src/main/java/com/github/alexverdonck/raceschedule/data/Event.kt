@@ -23,13 +23,13 @@ import kotlin.time.toDuration
 data class Event(
     val location: String?,
     val name: String?,
-    val sessions: Map<String, @Serializable(OffsetDateTimeSerializer::class) OffsetDateTime?>
+    val sessions: Map<String, @Serializable(OffsetDateTimeSerializer::class) OffsetDateTime?> // TODO session time may be a string if event is cancelled or TBA etc...
 ) :
     Parcelable
 
 // TODO clean up all this date calculation formatting etc, don't show Days/hours if they are 0
 fun Event.nextSession(): String {
-    val raceTime = sessions["Race"]
+    val raceTime = sessions["Race"] ?: return "TBC"
     val currentTime = OffsetDateTime.now(raceTime?.offset)
     if (raceTime?.plusHours(2)?.isBefore(currentTime) == true) {
         return "Race over"
@@ -67,7 +67,7 @@ fun Event.nextSession(): String {
     return "$nextSessionName\n$formattedTime"
 }
 
-
+// TODO session time may be a string if event is cancelled or TBA etc...
 object OffsetDateTimeSerializer : KSerializer<OffsetDateTime?> {
     override val descriptor: SerialDescriptor =
         PrimitiveSerialDescriptor("OffsetDateTime", PrimitiveKind.STRING)

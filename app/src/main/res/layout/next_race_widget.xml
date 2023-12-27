@@ -1,19 +1,37 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/Widget.RaceSchedule.AppWidget.Container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="203dp"
+    android:layout_height="54dp"
+    android:background="@drawable/app_widget_background"
     android:theme="@style/Theme.RaceSchedule.AppWidgetContainer">
 
     <TextView
-        android:id="@+id/appwidget_text"
+        android:id="@+id/appwidget_race"
         style="@style/Widget.RaceSchedule.AppWidget.InnerView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_margin="8dp"
-        android:contentDescription="@string/appwidget_text"
-        android:text="@string/appwidget_text"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/app_widget_background"
+        android:contentDescription="@string/appwidget_race"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/appwidget_race"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/gray_50"
         android:textSize="24sp"
-        android:textStyle="bold|italic" />
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/appwidget_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appwidget_race"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:contentDescription="@string/appwidget_time"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/appwidget_time"
+        android:textColor="@color/gray_50" />
 </RelativeLayout>

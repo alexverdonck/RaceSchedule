@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Race Schedule</string>
-    <string name="appwidget_text">EXAMPLE</string>
+    <string name="appwidget_race">Australia</string>
+    <string name="appwidget_time">Sun 2 Jan 12:00pm</string>
     <string name="add_widget">Add widget</string>
-    <string name="app_widget_description">This is an app widget description</string>
+    <string name="app_widget_description">Next race session</string>
 </resources>

@@ -69,7 +69,7 @@ fun Event.nextSession(): String {
 
 fun Event.raceSession(): String {
     val race = sessions["Race"] ?: throw Exception("Session does not have race time")
-    val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("d MMM h:mm a")
+    val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("E d MMM h:mm a")
 
     return race.format(formatter.withZone(ZoneId.systemDefault()));
 }

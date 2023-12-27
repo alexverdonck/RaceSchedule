@@ -6,6 +6,7 @@ import android.content.Context
 import android.widget.RemoteViews
 import com.github.alexverdonck.raceschedule.data.Events
 import com.github.alexverdonck.raceschedule.data.next
+import com.github.alexverdonck.raceschedule.data.raceSession
 
 /**
  * Implementation of App Widget functionality.
@@ -36,8 +37,11 @@ internal fun updateAppWidget(
     appWidgetManager: AppWidgetManager,
     appWidgetId: Int
 ) {
-    val nextEvent = Events.events.next();
-    val widgetText = context.getString(R.string.appwidget_text)
+    val nextEvent = Events.events.next()
+    var widgetText = "Season Over"
+    if (nextEvent != null) {
+        widgetText = nextEvent.raceSession()
+    }
     // Construct the RemoteViews object
     val views = RemoteViews(context.packageName, R.layout.next_race_widget)
     views.setTextViewText(R.id.appwidget_text, widgetText)

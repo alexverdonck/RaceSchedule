@@ -30,8 +30,8 @@ data class Event(
 // TODO clean up all this date calculation formatting etc, don't show Days/hours if they are 0
 fun Event.nextSession(): String {
     val raceTime = sessions["Race"] ?: return "TBC"
-    val currentTime = OffsetDateTime.now(raceTime?.offset)
-    if (raceTime?.plusHours(2)?.isBefore(currentTime) == true) {
+    val currentTime = OffsetDateTime.now(raceTime.offset)
+    if (raceTime.plusHours(2)?.isBefore(currentTime) == true) {
         return "Race over"
     }
 
@@ -48,7 +48,7 @@ fun Event.nextSession(): String {
     }
 
     if (nextSessionTime == null) {
-        return "LIVE!" // todo fix for when time TBC
+        return "LIVE!"
     }
 
     val timeUntil = OffsetDateTime.now(nextSessionTime.offset)
@@ -65,6 +65,13 @@ fun Event.nextSession(): String {
     val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("d MMM h:mm a")
     val formattedTime = nextSessionTime.format(formatter.withZone(ZoneId.systemDefault()))
     return "$nextSessionName\n$formattedTime"
+}
+
+fun Event.raceSession(): String {
+    val race = sessions["Race"] ?: throw Exception("Session does not have race time")
+    val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("d MMM h:mm a")
+
+    return race.format(formatter.withZone(ZoneId.systemDefault()));
 }
 
 // TODO session time may be a string if event is cancelled or TBA etc...

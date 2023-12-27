@@ -1,8 +1,6 @@
 package com.github.alexverdonck.raceschedule.eventtracker
 
 import android.app.Application
-import android.content.Context
-import androidx.annotation.RawRes
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import com.github.alexverdonck.raceschedule.R
@@ -17,14 +15,14 @@ import java.io.InputStreamReader
 
 @OptIn(ExperimentalSerializationApi::class)
 class EventTrackerViewModel(application: Application) : AndroidViewModel(application) {
-    private val context = getApplication<Application>().applicationContext
-    //val events = MutableLiveData<List<Event>>()
-    fun Context.getRawInput(@RawRes resourceId: Int): InputStream {
-        return resources.openRawResource(resourceId)
+
+    private fun getEventsJson(): InputStream {
+        return getApplication<Application>().applicationContext.resources.openRawResource(R.raw.events)
     }
+
     init {
         try {
-            val res: InputStream = context.resources.openRawResource(R.raw.events)
+            val res: InputStream = getEventsJson()
             val inputStreamReader = InputStreamReader(res)
             val sb = StringBuilder()
             var line: String?
@@ -36,7 +34,6 @@ class EventTrackerViewModel(application: Application) : AndroidViewModel(applica
             }
 
             Events.events.value = Json.decodeFromString(sb.toString())
-            //events.value = Json.decodeFromString(sb.toString())
 
         } catch (ex: Exception) {
             println(ex.message)

@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.DividerItemDecoration
 import com.github.alexverdonck.raceschedule.R
 import com.github.alexverdonck.raceschedule.data.Events
 import com.github.alexverdonck.raceschedule.databinding.FragmentEventTrackerBinding
@@ -35,11 +34,6 @@ class EventTrackerFragment : Fragment() {
 
         binding.eventList.adapter = adapter
 
-        // add a divider between items
-        //binding.eventList.apply {
-           //addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
-        //}
-
         eventTrackerViewModel.navigateToEventDetail.observe(viewLifecycleOwner) { event ->
             event?.let {
                 this.findNavController().navigate(
@@ -56,11 +50,6 @@ class EventTrackerFragment : Fragment() {
                 adapter.submitList(it)
             }
         }
-        //eventTrackerViewModel.events.observe(viewLifecycleOwner) {
-        //    it?.let {
-        //        adapter.submitList(it)
-        //    }
-        //}
 
         return binding.root
     }

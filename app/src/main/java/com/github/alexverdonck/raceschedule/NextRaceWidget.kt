@@ -7,12 +7,8 @@ import android.widget.RemoteViews
 import com.github.alexverdonck.raceschedule.data.Events
 import com.github.alexverdonck.raceschedule.data.next
 import com.github.alexverdonck.raceschedule.data.raceSession
+import com.github.alexverdonck.raceschedule.utils.readJsonFromRaw
 import kotlinx.serialization.ExperimentalSerializationApi
-import kotlinx.serialization.decodeFromString
-import kotlinx.serialization.json.Json
-import java.io.BufferedReader
-import java.io.InputStream
-import java.io.InputStreamReader
 
 /**
  * Implementation of App Widget functionality.
@@ -32,23 +28,7 @@ class NextRaceWidget : AppWidgetProvider() {
     @OptIn(ExperimentalSerializationApi::class)
     override fun onEnabled(context: Context) {
         // Enter relevant functionality for when the first widget is created
-        try {
-            val res: InputStream = context.resources.openRawResource(R.raw.events)
-            val inputStreamReader = InputStreamReader(res)
-            val sb = StringBuilder()
-            var line: String?
-            val br = BufferedReader(inputStreamReader)
-            line = br.readLine()
-            while (line != null) {
-                sb.append(line)
-                line = br.readLine()
-            }
-
-            Events.events.value = Json.decodeFromString(sb.toString())
-
-        } catch (ex: Exception) {
-            println(ex.message)
-        }
+        Events.events.value = readJsonFromRaw(context, R.raw.events)
     }
 
     override fun onDisabled(context: Context) {

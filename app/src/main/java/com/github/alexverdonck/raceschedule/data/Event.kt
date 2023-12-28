@@ -71,7 +71,7 @@ fun Event.raceSession(): String {
     val race = sessions["Race"] ?: throw Exception("Session does not have race time")
     val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("E d MMM h:mm a")
 
-    return race.format(formatter.withZone(ZoneId.systemDefault()));
+    return race.format(formatter.withZone(ZoneId.systemDefault()))
 }
 
 // TODO session time may be a string if event is cancelled or TBA etc...

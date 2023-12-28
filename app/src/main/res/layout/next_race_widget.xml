@@ -2,7 +2,7 @@
     style="@style/Widget.RaceSchedule.AppWidget.Container"
     android:layout_width="203dp"
     android:layout_height="54dp"
-    android:background="@drawable/app_widget_background"
+    android:background="#00000000"
     android:theme="@style/Theme.RaceSchedule.AppWidgetContainer">
 
     <TextView
@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="2dp"
-        android:background="@drawable/app_widget_background"
+        android:background="#00000000"
         android:contentDescription="@string/appwidget_race"
         android:fontFamily="sans-serif-medium"
         android:shadowColor="@color/black"

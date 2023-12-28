@@ -16,6 +16,10 @@
         android:background="@drawable/app_widget_background"
         android:contentDescription="@string/appwidget_race"
         android:fontFamily="sans-serif-medium"
+        android:shadowColor="@color/black"
+        android:shadowDx="-2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
         android:text="@string/appwidget_race"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/gray_50"
@@ -32,6 +36,10 @@
         android:layout_marginTop="2dp"
         android:contentDescription="@string/appwidget_time"
         android:fontFamily="sans-serif-medium"
+        android:shadowColor="@color/black"
+        android:shadowDx="-2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
         android:text="@string/appwidget_time"
         android:textColor="@color/gray_50" />
 </RelativeLayout>

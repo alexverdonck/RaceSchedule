@@ -21,7 +21,6 @@
         android:shadowDy="2"
         android:shadowRadius="2"
         android:text="@string/appwidget_race"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/gray_50"
         android:textSize="24sp"
         android:textStyle="bold" />

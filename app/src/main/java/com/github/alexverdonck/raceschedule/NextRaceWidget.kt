@@ -8,7 +8,6 @@ import com.github.alexverdonck.raceschedule.data.Events
 import com.github.alexverdonck.raceschedule.data.next
 import com.github.alexverdonck.raceschedule.data.raceSession
 import com.github.alexverdonck.raceschedule.utils.readJsonFromRaw
-import kotlinx.serialization.ExperimentalSerializationApi
 
 /**
  * Implementation of App Widget functionality.
@@ -25,7 +24,6 @@ class NextRaceWidget : AppWidgetProvider() {
         }
     }
 
-    @OptIn(ExperimentalSerializationApi::class)
     override fun onEnabled(context: Context) {
         // Enter relevant functionality for when the first widget is created
         Events.events.value = readJsonFromRaw(context, R.raw.events)

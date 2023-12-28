@@ -7,9 +7,7 @@ import com.github.alexverdonck.raceschedule.R
 import com.github.alexverdonck.raceschedule.data.Event
 import com.github.alexverdonck.raceschedule.data.Events
 import com.github.alexverdonck.raceschedule.utils.readJsonFromRaw
-import kotlinx.serialization.ExperimentalSerializationApi
 
-@OptIn(ExperimentalSerializationApi::class)
 class EventTrackerViewModel(application: Application) : AndroidViewModel(application) {
 
     init {

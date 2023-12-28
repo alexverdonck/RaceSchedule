@@ -19,6 +19,7 @@ class NextRaceWidget : AppWidgetProvider() {
         appWidgetIds: IntArray
     ) {
         // There may be multiple widgets active, so update all of them
+        Events.events.value = readJsonFromRaw(context, R.raw.events)
         for (appWidgetId in appWidgetIds) {
             updateAppWidget(context, appWidgetManager, appWidgetId)
         }
@@ -26,7 +27,6 @@ class NextRaceWidget : AppWidgetProvider() {
 
     override fun onEnabled(context: Context) {
         // Enter relevant functionality for when the first widget is created
-        Events.events.value = readJsonFromRaw(context, R.raw.events)
     }
 
     override fun onDisabled(context: Context) {

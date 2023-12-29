@@ -4,6 +4,7 @@ import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
 import android.content.Context
 import android.widget.RemoteViews
+import com.github.alexverdonck.raceschedule.data.Event
 import com.github.alexverdonck.raceschedule.data.Events
 import com.github.alexverdonck.raceschedule.data.next
 import com.github.alexverdonck.raceschedule.data.raceSession
@@ -20,8 +21,9 @@ class NextRaceWidget : AppWidgetProvider() {
     ) {
         // There may be multiple widgets active, so update all of them
         Events.events.value = readJsonFromRaw(context, R.raw.events)
+        val nextEvent = Events.events.next()
         for (appWidgetId in appWidgetIds) {
-            updateAppWidget(context, appWidgetManager, appWidgetId)
+            updateAppWidget(context, appWidgetManager, appWidgetId, nextEvent)
         }
     }
 
@@ -37,9 +39,9 @@ class NextRaceWidget : AppWidgetProvider() {
 internal fun updateAppWidget(
     context: Context,
     appWidgetManager: AppWidgetManager,
-    appWidgetId: Int
+    appWidgetId: Int,
+    nextEvent: Event?
 ) {
-    val nextEvent = Events.events.next()
     var raceTime = ""
     var raceLocation = "Season Over"
     if (nextEvent != null) {

@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.github.alexverdonck.raceschedule.data.Event
 
-class EventDetailViewModel(private val selectedEvent: Event) : ViewModel() {
+class EventDetailViewModel(selectedEvent: Event) : ViewModel() {
 
     private val _event = MutableLiveData<Event>()
     val event: LiveData<Event>
@@ -14,6 +14,7 @@ class EventDetailViewModel(private val selectedEvent: Event) : ViewModel() {
     init {
         _event.value = selectedEvent
     }
+
 
 
 }

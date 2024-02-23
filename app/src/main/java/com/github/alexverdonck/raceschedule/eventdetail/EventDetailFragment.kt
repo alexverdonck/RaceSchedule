@@ -8,11 +8,10 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.github.alexverdonck.raceschedule.R
-import com.github.alexverdonck.raceschedule.data.Event
 import com.github.alexverdonck.raceschedule.databinding.FragmentEventDetailBinding
 
 class EventDetailFragment : Fragment() {
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
 
         // get reference to binding object and inflate fragment view
         val binding: FragmentEventDetailBinding = DataBindingUtil.inflate(
@@ -22,11 +21,22 @@ class EventDetailFragment : Fragment() {
 
         val viewModelFactory = EventDetailViewModelFactory(arguments.selectedEvent)
 
-        val eventDetailViewModel = ViewModelProvider(this, viewModelFactory).get(EventDetailViewModel::class.java)
+        val eventDetailViewModel = ViewModelProvider(this, viewModelFactory)[EventDetailViewModel::class.java]
+
+        val adapter = SessionAdapter()
+
+        binding.eventSessions.adapter = adapter
 
         binding.eventDetailViewModel = eventDetailViewModel
 
         binding.lifecycleOwner = this
+
+        eventDetailViewModel.event.observe(viewLifecycleOwner) {
+            it?.let {
+                // convert map to a list
+                adapter.submitList(it.sessions.toList())
+            }
+        }
 
         return binding.root
 

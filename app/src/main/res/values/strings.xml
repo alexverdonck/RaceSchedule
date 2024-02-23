@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">RaceSchedule</string>
+    <string name="app_name">Race Schedule</string>
+    <string name="appwidget_race">Australia</string>
+    <string name="appwidget_time">Sun 2 Jan 12:00pm</string>
+    <string name="app_widget_description">Next race session</string>
 </resources>

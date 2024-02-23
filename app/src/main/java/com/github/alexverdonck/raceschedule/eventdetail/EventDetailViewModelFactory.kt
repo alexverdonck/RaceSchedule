@@ -7,7 +7,7 @@ import java.lang.IllegalArgumentException
 
 class EventDetailViewModelFactory(private val selectedEvent: Event) : ViewModelProvider.Factory {
     @Suppress("unchecked_cast")
-    override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(EventDetailViewModel::class.java)) {
             return EventDetailViewModel(selectedEvent) as T
         }

@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.RaceSchedule.AppWidget.Container"
+    android:layout_width="203dp"
+    android:layout_height="54dp"
+    android:background="#00000000"
+    android:theme="@style/Theme.RaceSchedule.AppWidgetContainer">
+
+    <TextView
+        android:id="@+id/appwidget_race"
+        style="@style/Widget.RaceSchedule.AppWidget.InnerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:background="#00000000"
+        android:contentDescription="@string/appwidget_race"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="@color/black"
+        android:shadowDx="-2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="@string/appwidget_race"
+        android:textColor="@color/gray_50"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/appwidget_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appwidget_race"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:contentDescription="@string/appwidget_time"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="@color/black"
+        android:shadowDx="-2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="@string/appwidget_time"
+        android:textColor="@color/gray_50" />
+</RelativeLayout>

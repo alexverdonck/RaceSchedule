@@ -1,184 +1,266 @@
 [
   {
-    "location": "Austria",
-    "name": "FORMULA 1 ROLEX GROSSER PREIS VON ÖSTERREICH 2020",
+    "location": "Bahrain",
+    "name": "FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2024",
     "sessions": {
-      "Practice 1": "2020-07-03T11:00:00.0000000+02:00",
-      "Practice 2": "2020-07-03T15:00:00.0000000+02:00",
-      "Practice 3": "2020-07-04T12:00:00.0000000+02:00",
-      "Qualifying": "2020-07-04T15:00:00.0000000+02:00",
-      "Race": "2020-07-05T15:10:00.0000000+02:00"
+      "Practice 1": "2024-02-29T14:30:00.0000000+03:00",
+      "Practice 2": "2024-02-29T18:00:00.0000000+03:00",
+      "Practice 3": "2024-03-01T15:30:00.0000000+03:00",
+      "Qualifying": "2024-03-01T19:00:00.0000000+03:00",
+      "Race": "2024-03-02T18:00:00.0000000+03:00"
     }
   },
   {
-    "location": "Austria",
-    "name": "FORMULA 1 PIRELLI GROSSER PREIS DER STEIERMARK 2020",
+    "location": "Saudi Arabia",
+    "name": "FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2024",
     "sessions": {
-      "Practice 1": "2020-07-10T11:00:00.0000000+02:00",
-      "Practice 2": "2020-07-10T15:00:00.0000000+02:00",
-      "Qualifying": "2020-07-11T15:00:00.0000000+02:00",
-      "Race": "2020-07-12T15:10:00.0000000+02:00"
+      "Practice 1": "2024-03-07T16:30:00.0000000+03:00",
+      "Practice 2": "2024-03-07T20:00:00.0000000+03:00",
+      "Practice 3": "2024-03-08T16:30:00.0000000+03:00",
+      "Qualifying": "2024-03-08T20:00:00.0000000+03:00",
+      "Race": "2024-03-09T20:00:00.0000000+03:00"
     }
   },
   {
-    "location": "Hungary",
-    "name": "FORMULA 1 ARAMCO MAGYAR NAGYDÍJ 2020",
+    "location": "Australia",
+    "name": "FORMULA 1 ROLEX AUSTRALIAN GRAND PRIX 2024",
     "sessions": {
-      "Practice 1": "2020-07-17T11:00:00.0000000+02:00",
-      "Practice 2": "2020-07-17T15:00:00.0000000+02:00",
-      "Practice 3": "2020-07-18T12:00:00.0000000+02:00",
-      "Qualifying": "2020-07-18T15:00:00.0000000+02:00",
-      "Race": "2020-07-19T15:10:00.0000000+02:00"
+      "Practice 1": "2024-03-22T12:30:00.0000000+11:00",
+      "Practice 2": "2024-03-22T16:00:00.0000000+11:00",
+      "Practice 3": "2024-03-23T12:30:00.0000000+11:00",
+      "Qualifying": "2024-03-23T16:00:00.0000000+11:00",
+      "Race": "2024-03-24T15:00:00.0000000+11:00"
     }
   },
   {
-    "location": "Great Britain",
-    "name": "FORMULA 1 PIRELLI BRITISH GRAND PRIX 2020",
+    "location": "Japan",
+    "name": "FORMULA 1 MSC CRUISES JAPANESE GRAND PRIX 2024",
     "sessions": {
-      "Practice 1": "2020-07-31T11:00:00.0000000+01:00",
-      "Practice 2": "2020-07-31T15:00:00.0000000+01:00",
-      "Practice 3": "2020-08-01T11:00:00.0000000+01:00",
-      "Qualifying": "2020-08-01T14:00:00.0000000+01:00",
-      "Race": "2020-08-02T14:10:00.0000000+01:00"
+      "Practice 1": "2024-04-05T11:30:00.0000000+09:00",
+      "Practice 2": "2024-04-05T15:00:00.0000000+09:00",
+      "Practice 3": "2024-04-06T11:30:00.0000000+09:00",
+      "Qualifying": "2024-04-06T15:00:00.0000000+09:00",
+      "Race": "2024-04-07T14:00:00.0000000+09:00"
     }
   },
   {
-    "location": "Great Britain",
-    "name": "EMIRATES FORMULA 1 70TH ANNIVERSARY GRAND PRIX 2020",
+    "location": "China",
+    "name": "FORMULA 1 LENOVO CHINESE GRAND PRIX 2024",
     "sessions": {
-      "Practice 1": "2020-08-07T11:00:00.0000000+01:00",
-      "Practice 2": "2020-08-07T15:00:00.0000000+01:00",
-      "Practice 3": "2020-08-08T11:00:00.0000000+01:00",
-      "Qualifying": "2020-08-08T14:00:00.0000000+01:00",
-      "Race": "2020-08-09T14:10:00.0000000+01:00"
+      "Practice 1": "TBC",
+      "Qualifying": "TBC",
+      "Sprint Shootout": "TBC",
+      "Sprint": "TBC",
+      "Race": "2024-04-21T15:00:00.0000000+08:00"
+    }
+  },
+  {
+    "location": "United States",
+    "name": "FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2024",
+    "sessions": {
+      "Practice 1": "TBC",
+      "Qualifying": "TBC",
+      "Sprint Shootout": "TBC",
+      "Sprint": "TBC",
+      "Race": "2024-05-05T16:00:00.0000000-04:00"
+    }
+  },
+  {
+    "location": "Italy",
+    "name": "FORMULA 1 MSC CRUISES GRAN PREMIO DELL'EMILIA-ROMAGNA 2024",
+    "sessions": {
+      "Practice 1": "2024-05-17T13:30:00.0000000+02:00",
+      "Practice 2": "2024-05-17T17:00:00.0000000+02:00",
+      "Practice 3": "2024-05-18T12:30:00.0000000+02:00",
+      "Qualifying": "2024-05-18T16:00:00.0000000+02:00",
+      "Race": "2024-05-19T15:00:00.0000000+02:00"
+    }
+  },
+  {
+    "location": "Monaco",
+    "name": "FORMULA 1 GRAND PRIX DE MONACO 2024",
+    "sessions": {
+      "Practice 1": "2024-05-24T13:30:00.0000000+02:00",
+      "Practice 2": "2024-05-24T17:00:00.0000000+02:00",
+      "Practice 3": "2024-05-25T12:30:00.0000000+02:00",
+      "Qualifying": "2024-05-25T16:00:00.0000000+02:00",
+      "Race": "2024-05-26T15:00:00.0000000+02:00"
+    }
+  },
+  {
+    "location": "Canada",
+    "name": "FORMULA 1 AWS GRAND PRIX DU CANADA 2024",
+    "sessions": {
+      "Practice 1": "2024-06-07T13:30:00.0000000-04:00",
+      "Practice 2": "2024-06-07T17:00:00.0000000-04:00",
+      "Practice 3": "2024-06-08T12:30:00.0000000-04:00",
+      "Qualifying": "2024-06-08T16:00:00.0000000-04:00",
+      "Race": "2024-06-09T14:00:00.0000000-04:00"
     }
   },
   {
     "location": "Spain",
-    "name": "FORMULA 1 ARAMCO GRAN PREMIO DE ESPAÑA 2020",
+    "name": "FORMULA 1 ARAMCO GRAN PREMIO DE ESPAÑA 2024",
     "sessions": {
-      "Practice 1": "2020-08-14T11:00:00.0000000+02:00",
-      "Practice 2": "2020-08-14T15:00:00.0000000+02:00",
-      "Practice 3": "2020-08-15T12:00:00.0000000+02:00",
-      "Qualifying": "2020-08-15T15:00:00.0000000+02:00",
-      "Race": "2020-08-16T15:10:00.0000000+02:00"
+      "Practice 1": "2024-06-21T13:30:00.0000000+02:00",
+      "Practice 2": "2024-06-21T17:00:00.0000000+02:00",
+      "Practice 3": "2024-06-22T12:30:00.0000000+02:00",
+      "Qualifying": "2024-06-22T16:00:00.0000000+02:00",
+      "Race": "2024-06-23T15:00:00.0000000+02:00"
+    }
+  },
+  {
+    "location": "Austria",
+    "name": "FORMULA 1 QATAR AIRWAYS AUSTRIAN GRAND PRIX 2024",
+    "sessions": {
+      "Practice 1": "TBC",
+      "Qualifying": "TBC",
+      "Sprint Shootout": "TBC",
+      "Sprint": "TBC",
+      "Race": "2024-06-30T15:00:00.0000000+02:00"
+    }
+  },
+  {
+    "location": "Great Britain",
+    "name": "FORMULA 1 QATAR AIRWAYS BRITISH GRAND PRIX 2024",
+    "sessions": {
+      "Practice 1": "2024-07-05T12:30:00.0000000+01:00",
+      "Practice 2": "2024-07-05T16:00:00.0000000+01:00",
+      "Practice 3": "2024-07-06T11:30:00.0000000+01:00",
+      "Qualifying": "2024-07-06T15:00:00.0000000+01:00",
+      "Race": "2024-07-07T15:00:00.0000000+01:00"
+    }
+  },
+  {
+    "location": "Hungary",
+    "name": "FORMULA 1 HUNGARIAN GRAND PRIX 2024",
+    "sessions": {
+      "Practice 1": "2024-07-19T13:30:00.0000000+02:00",
+      "Practice 2": "2024-07-19T17:00:00.0000000+02:00",
+      "Practice 3": "2024-07-20T12:30:00.0000000+02:00",
+      "Qualifying": "2024-07-20T16:00:00.0000000+02:00",
+      "Race": "2024-07-21T15:00:00.0000000+02:00"
     }
   },
   {
     "location": "Belgium",
-    "name": "FORMULA 1 ROLEX BELGIAN GRAND PRIX 2020",
+    "name": "FORMULA 1 ROLEX BELGIAN GRAND PRIX 2024",
     "sessions": {
-      "Practice 1": "2020-08-28T11:00:00.0000000+02:00",
-      "Practice 2": "2020-08-28T15:00:00.0000000+02:00",
-      "Practice 3": "2020-08-29T12:00:00.0000000+02:00",
-      "Qualifying": "2020-08-29T15:00:00.0000000+02:00",
-      "Race": "2020-08-30T15:10:00.0000000+02:00"
+      "Practice 1": "2024-07-26T13:30:00.0000000+02:00",
+      "Practice 2": "2024-07-26T17:00:00.0000000+02:00",
+      "Practice 3": "2024-07-27T12:30:00.0000000+02:00",
+      "Qualifying": "2024-07-27T16:00:00.0000000+02:00",
+      "Race": "2024-07-28T15:00:00.0000000+02:00"
+    }
+  },
+  {
+    "location": "Netherlands",
+    "name": "FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2024",
+    "sessions": {
+      "Practice 1": "2024-08-23T12:30:00.0000000+02:00",
+      "Practice 2": "2024-08-23T16:00:00.0000000+02:00",
+      "Practice 3": "2024-08-24T11:30:00.0000000+02:00",
+      "Qualifying": "2024-08-24T15:00:00.0000000+02:00",
+      "Race": "2024-08-25T15:00:00.0000000+02:00"
     }
   },
   {
     "location": "Italy",
-    "name": "FORMULA 1 GRAN PREMIO HEINEKEN D’ITALIA 2020",
+    "name": "FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2024",
     "sessions": {
-      "Practice 1": "2020-09-04T11:00:00.0000000+02:00",
-      "Practice 2": "2020-09-04T15:00:00.0000000+02:00",
-      "Practice 3": "2020-09-05T12:00:00.0000000+02:00",
-      "Qualifying": "2020-09-05T15:00:00.0000000+02:00",
-      "Race": "2020-09-06T15:10:00.0000000+02:00"
+      "Practice 1": "2024-08-30T13:30:00.0000000+02:00",
+      "Practice 2": "2024-08-30T17:00:00.0000000+02:00",
+      "Practice 3": "2024-08-31T12:30:00.0000000+02:00",
+      "Qualifying": "2024-08-31T16:00:00.0000000+02:00",
+      "Race": "2024-09-01T15:00:00.0000000+02:00"
     }
   },
   {
-    "location": "Italy",
-    "name": "FORMULA 1 PIRELLI GRAN PREMIO DELLA TOSCANA FERRARI 1000 2020",
+    "location": "Azerbaijan",
+    "name": "FORMULA 1 QATAR AIRWAYS AZERBAIJAN GRAND PRIX 2024",
     "sessions": {
-      "Practice 1": "2020-09-11T11:00:00.0000000+02:00",
-      "Practice 2": "2020-09-11T15:00:00.0000000+02:00",
-      "Practice 3": "2020-09-12T12:00:00.0000000+02:00",
-      "Qualifying": "2020-09-12T15:00:00.0000000+02:00",
-      "Race": "2020-09-13T15:10:00.0000000+02:00"
+      "Practice 1": "2024-09-13T13:30:00.0000000+04:00",
+      "Practice 2": "2024-09-13T17:00:00.0000000+04:00",
+      "Practice 3": "2024-09-14T12:30:00.0000000+04:00",
+      "Qualifying": "2024-09-14T16:00:00.0000000+04:00",
+      "Race": "2024-09-15T15:00:00.0000000+04:00"
     }
   },
   {
-    "location": "Russia",
-    "name": "FORMULA 1 VTB RUSSIAN GRAND PRIX 2020",
+    "location": "Singapore",
+    "name": "FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2024",
     "sessions": {
-      "Practice 1": "2020-09-25T11:00:00.0000000+03:00",
-      "Practice 2": "2020-09-25T15:00:00.0000000+03:00",
-      "Practice 3": "2020-09-26T12:00:00.0000000+03:00",
-      "Qualifying": "2020-09-26T15:00:00.0000000+03:00",
-      "Race": "2020-09-27T14:10:00.0000000+03:00"
+      "Practice 1": "2024-09-20T17:30:00.0000000+08:00",
+      "Practice 2": "2024-09-20T21:00:00.0000000+08:00",
+      "Practice 3": "2024-09-21T17:30:00.0000000+08:00",
+      "Qualifying": "2024-09-21T21:00:00.0000000+08:00",
+      "Race": "2024-09-22T20:00:00.0000000+08:00"
     }
   },
   {
-    "location": "Germany",
-    "name": "FORMULA 1 ARAMCO GROSSER PREIS DER EIFEL 2020",
+    "location": "United States",
+    "name": "FORMULA 1 PIRELLI UNITED STATES GRAND PRIX 2024",
     "sessions": {
-      "Practice 3": "2020-10-10T12:00:00.0000000+02:00",
-      "Qualifying": "2020-10-10T15:00:00.0000000+02:00",
-      "Race": "2020-10-11T14:10:00.0000000+02:00"
+      "Practice 1": "TBC",
+      "Qualifying": "TBC",
+      "Sprint Shootout": "TBC",
+      "Sprint": "TBC",
+      "Race": "2024-10-20T14:00:00.0000000-05:00"
     }
   },
   {
-    "location": "Portugal",
-    "name": "FORMULA 1 HEINEKEN GRANDE PRÉMIO DE PORTUGAL 2020",
+    "location": "Mexico",
+    "name": "FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2024",
     "sessions": {
-      "Practice 1": "2020-10-23T11:00:00.0000000+01:00",
-      "Practice 2": "2020-10-23T15:00:00.0000000+01:00",
-      "Practice 3": "2020-10-24T11:00:00.0000000+01:00",
-      "Qualifying": "2020-10-24T14:00:00.0000000+01:00",
-      "Race": "2020-10-25T13:10:00.0000000+00:00"
+      "Practice 1": "2024-10-25T12:30:00.0000000-06:00",
+      "Practice 2": "2024-10-25T16:00:00.0000000-06:00",
+      "Practice 3": "2024-10-26T11:30:00.0000000-06:00",
+      "Qualifying": "2024-10-26T15:00:00.0000000-06:00",
+      "Race": "2024-10-27T14:00:00.0000000-06:00"
     }
   },
   {
-    "location": "Italy",
-    "name": "FORMULA 1 EMIRATES GRAN PREMIO DELL&#39;EMILIA ROMAGNA 2020",
+    "location": "Brazil",
+    "name": "FORMULA 1 LENOVO GRANDE PRÊMIO DE SÃO PAULO 2024",
     "sessions": {
-      "Practice 1": "2020-10-31T10:00:00.0000000+01:00",
-      "Qualifying": "2020-10-31T14:00:00.0000000+01:00",
-      "Race": "2020-11-01T13:10:00.0000000+01:00"
+      "Practice 1": "TBC",
+      "Qualifying": "TBC",
+      "Sprint Shootout": "TBC",
+      "Sprint": "TBC",
+      "Race": "2024-11-03T14:00:00.0000000-03:00"
     }
   },
   {
-    "location": "Turkey",
-    "name": "FORMULA 1 DHL TURKISH GRAND PRIX 2020",
+    "location": "United States",
+    "name": "FORMULA 1 HEINEKEN SILVER LAS VEGAS GRAND PRIX 2024",
     "sessions": {
-      "Practice 1": "2020-11-13T11:00:00.0000000+03:00",
-      "Practice 2": "2020-11-13T15:00:00.0000000+03:00",
-      "Practice 3": "2020-11-14T12:00:00.0000000+03:00",
-      "Qualifying": "2020-11-14T15:00:00.0000000+03:00",
-      "Race": "2020-11-15T13:10:00.0000000+03:00"
+      "Practice 1": "TBC",
+      "Practice 2": "TBC",
+      "Practice 3": "TBC",
+      "Qualifying": "TBC",
+      "Race": "2024-11-23T22:00:00.0000000-08:00"
     }
   },
   {
-    "location": "Bahrain",
-    "name": "FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2020",
+    "location": "Qatar",
+    "name": "FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2024",
     "sessions": {
-      "Practice 1": "2020-11-27T14:00:00.0000000+03:00",
-      "Practice 2": "2020-11-27T18:00:00.0000000+03:00",
-      "Practice 3": "2020-11-28T14:00:00.0000000+03:00",
-      "Qualifying": "2020-11-28T17:00:00.0000000+03:00",
-      "Race": "2020-11-29T17:10:00.0000000+03:00"
-    }
-  },
-  {
-    "location": "Bahrain",
-    "name": "FORMULA 1 ROLEX SAKHIR GRAND PRIX 2020",
-    "sessions": {
-      "Practice 1": "2020-12-04T16:30:00.0000000+03:00",
-      "Practice 2": "2020-12-04T20:30:00.0000000+03:00",
-      "Practice 3": "2020-12-05T17:00:00.0000000+03:00",
-      "Qualifying": "2020-12-05T20:00:00.0000000+03:00",
-      "Race": "2020-12-06T20:10:00.0000000+03:00"
+      "Practice 1": "TBC",
+      "Qualifying": "TBC",
+      "Sprint Shootout": "TBC",
+      "Sprint": "TBC",
+      "Race": "2024-12-01T20:00:00.0000000+03:00"
     }
   },
   {
     "location": "Abu Dhabi",
-    "name": "FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2020",
+    "name": "FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2024",
     "sessions": {
-      "Practice 1": "2020-12-11T13:00:00.0000000+04:00",
-      "Practice 2": "2020-12-11T17:00:00.0000000+04:00",
-      "Practice 3": "2020-12-12T14:00:00.0000000+04:00",
-      "Qualifying": "2020-12-12T17:00:00.0000000+04:00",
-      "Race": "2020-12-13T17:10:00.0000000+04:00"
+      "Practice 1": "2024-12-06T13:30:00.0000000+04:00",
+      "Practice 2": "2024-12-06T17:00:00.0000000+04:00",
+      "Practice 3": "2024-12-07T14:30:00.0000000+04:00",
+      "Qualifying": "2024-12-07T18:00:00.0000000+04:00",
+      "Race": "2024-12-08T17:00:00.0000000+04:00"
     }
   }
 ]

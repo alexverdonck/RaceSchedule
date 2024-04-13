@@ -47,10 +47,10 @@
     "location": "China",
     "name": "FORMULA 1 LENOVO CHINESE GRAND PRIX 2024",
     "sessions": {
-      "Practice 1": "TBC",
-      "Qualifying": "TBC",
-      "Sprint Shootout": "TBC",
-      "Sprint": "TBC",
+      "Practice 1": "2024-04-19T11:30:00.0000000+08:00",
+      "Sprint Qualifying": "2024-04-19T15:30:00.0000000+08:00",
+      "Sprint": "2024-04-20T11:00:00.0000000+08:00",
+      "Qualifying": "2024-04-20T15:00:00.0000000+08:00",
       "Race": "2024-04-21T15:00:00.0000000+08:00"
     }
   },
@@ -58,16 +58,16 @@
     "location": "United States",
     "name": "FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2024",
     "sessions": {
-      "Practice 1": "TBC",
-      "Qualifying": "TBC",
-      "Sprint Shootout": "TBC",
-      "Sprint": "TBC",
+      "Practice 1": "2024-05-03T12:30:00.0000000-04:00",
+      "Sprint Qualifying": "2024-05-03T16:30:00.0000000-04:00",
+      "Sprint": "2024-05-04T12:00:00.0000000-04:00",
+      "Qualifying": "2024-05-04T16:00:00.0000000-04:00",
       "Race": "2024-05-05T16:00:00.0000000-04:00"
     }
   },
   {
     "location": "Italy",
-    "name": "FORMULA 1 MSC CRUISES GRAN PREMIO DELL'EMILIA-ROMAGNA 2024",
+    "name": "FORMULA 1 MSC CRUISES GRAN PREMIO DEL MADE IN ITALY E DELL'EMILIA-ROMAGNA 2024",
     "sessions": {
       "Practice 1": "2024-05-17T13:30:00.0000000+02:00",
       "Practice 2": "2024-05-17T17:00:00.0000000+02:00",
@@ -113,10 +113,10 @@
     "location": "Austria",
     "name": "FORMULA 1 QATAR AIRWAYS AUSTRIAN GRAND PRIX 2024",
     "sessions": {
-      "Practice 1": "TBC",
-      "Qualifying": "TBC",
-      "Sprint Shootout": "TBC",
-      "Sprint": "TBC",
+      "Practice 1": "2024-06-28T12:30:00.0000000+02:00",
+      "Sprint Qualifying": "2024-06-28T16:30:00.0000000+02:00",
+      "Sprint": "2024-06-29T12:00:00.0000000+02:00",
+      "Qualifying": "2024-06-29T16:00:00.0000000+02:00",
       "Race": "2024-06-30T15:00:00.0000000+02:00"
     }
   },
@@ -201,10 +201,10 @@
     "location": "United States",
     "name": "FORMULA 1 PIRELLI UNITED STATES GRAND PRIX 2024",
     "sessions": {
-      "Practice 1": "TBC",
-      "Qualifying": "TBC",
-      "Sprint Shootout": "TBC",
-      "Sprint": "TBC",
+      "Practice 1": "2024-10-18T12:30:00.0000000-05:00",
+      "Sprint Qualifying": "2024-10-18T16:30:00.0000000-05:00",
+      "Sprint": "2024-10-19T13:00:00.0000000-05:00",
+      "Qualifying": "2024-10-19T17:00:00.0000000-05:00",
       "Race": "2024-10-20T14:00:00.0000000-05:00"
     }
   },
@@ -223,10 +223,10 @@
     "location": "Brazil",
     "name": "FORMULA 1 LENOVO GRANDE PRÊMIO DE SÃO PAULO 2024",
     "sessions": {
-      "Practice 1": "TBC",
-      "Qualifying": "TBC",
-      "Sprint Shootout": "TBC",
-      "Sprint": "TBC",
+      "Practice 1": "2024-11-01T11:30:00.0000000-03:00",
+      "Sprint Qualifying": "2024-11-01T15:30:00.0000000-03:00",
+      "Sprint": "2024-11-02T11:00:00.0000000-03:00",
+      "Qualifying": "2024-11-02T15:00:00.0000000-03:00",
       "Race": "2024-11-03T14:00:00.0000000-03:00"
     }
   },
@@ -234,10 +234,10 @@
     "location": "United States",
     "name": "FORMULA 1 HEINEKEN SILVER LAS VEGAS GRAND PRIX 2024",
     "sessions": {
-      "Practice 1": "TBC",
-      "Practice 2": "TBC",
-      "Practice 3": "TBC",
-      "Qualifying": "TBC",
+      "Practice 1": "2024-11-21T18:30:00.0000000-08:00",
+      "Practice 2": "2024-11-21T22:00:00.0000000-08:00",
+      "Practice 3": "2024-11-22T18:30:00.0000000-08:00",
+      "Qualifying": "2024-11-22T22:00:00.0000000-08:00",
       "Race": "2024-11-23T22:00:00.0000000-08:00"
     }
   },
@@ -245,10 +245,10 @@
     "location": "Qatar",
     "name": "FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2024",
     "sessions": {
-      "Practice 1": "TBC",
-      "Qualifying": "TBC",
-      "Sprint Shootout": "TBC",
-      "Sprint": "TBC",
+      "Practice 1": "2024-11-29T16:30:00.0000000+03:00",
+      "Sprint Qualifying": "2024-11-29T20:30:00.0000000+03:00",
+      "Sprint": "2024-11-30T16:00:00.0000000+03:00",
+      "Qualifying": "2024-11-30T20:00:00.0000000+03:00",
       "Race": "2024-12-01T20:00:00.0000000+03:00"
     }
   },
